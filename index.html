@@ -11,7 +11,7 @@
 <body>
 <!-- header -->
 <header>
-    <nav class="navbar navbar-expand-lg fixed-top border-bottom border-body background-blue"
+    <nav id="navbar-header" class="navbar navbar-expand-lg fixed-top border-bottom border-body background-blue"
          data-bs-theme="dark">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
@@ -52,7 +52,10 @@
         </div>
     </nav>
 </header>
-<div class="container-fluid d-flex flex-column w-100">
+<div class="container-fluid d-flex flex-column w-100 scrollspy-example"
+     data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%"
+     data-bs-smooth-scroll="true" tabindex="0">
+
     <!-- accueil -->
     <section id="accueil"
              class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
@@ -188,22 +191,23 @@
         </div>
     </section>
 
+    <!-- compétences -->
     <section id="competences"
              class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
         <h2>Compétences</h2>
         <div class="container-fluid d-flex flex-wrap justify-content-around">
             <!-- Compétence 1 -->
             <div class="card my-3">
-                <div class="card-body">
-                    <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#competence1Details"
-                        aria-expanded="false" aria-controls="competence1Details">
-                        Réalisé
+                <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence1Details"
+                     aria-expanded="false" aria-controls="competence1Details">
+                    <h5 class="card-title text-center">
+                        Réaliser
                     </h5>
                     <p class="card-text text-center">Partir des exigences et aller jusqu'à une application complète.</p>
                 </div>
                 <div class="collapse" id="competence1Details">
                     <div class="card-body">
-                        <h5>WikiAdventure (en cours)</h5>
+                        <h5>WikiAdventure (terminé)</h5>
                         <div class="container-fluid d-flex align-items-center">
                             <a class="img-project" target="_blank" rel="noreferrer" href="">
                                 <img src="projects/wikiadventure.png"
@@ -238,9 +242,9 @@
 
             <!-- Compétence 2 -->
             <div class="card my-3">
-                <div class="card-body">
-                    <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#competence2Details"
-                        aria-expanded="false" aria-controls="competence2Details">
+                <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence2Details"
+                     aria-expanded="false" aria-controls="competence2Details">
+                    <h5 class="card-title text-center">
                         Optimiser
                     </h5>
                     <p class="card-text text-center">Sélectionner les algorithmes adéquats pour répondre à un problème
@@ -250,7 +254,8 @@
                     <div class="card-body">
                         <h5>Travia (terminé)</h5>
                         <div class="container-fluid d-flex align-items-center">
-                            <a class="img-project" target="_blank" rel="noreferrer" href="http://localhost/Travia/Account/login_form.php">
+                            <a class="img-project" target="_blank" rel="noreferrer"
+                               href="http://localhost/Travia/Account/login_form.php">
                                 <img src="projects/travia.png"
                                      alt="Projet lié à Développement Web"
                                      loading="lazy"
@@ -283,9 +288,9 @@
 
             <!-- Compétence 3 -->
             <div class="card my-3">
-                <div class="card-body">
-                    <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#competence3Details"
-                        aria-expanded="false" aria-controls="competence3Details">
+                <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence3Details"
+                     aria-expanded="false" aria-controls="competence3Details">
+                    <h5 class="card-title text-center">
                         Administrer
                     </h5>
                     <p class="card-text text-center">Déployer des services dans une infrastructure réseau</p>
@@ -326,9 +331,9 @@
 
             <!-- Compétence 4 -->
             <div class="card my-3">
-                <div class="card-body">
-                    <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#competence4Details"
-                        aria-expanded="false" aria-controls="competence4Details">
+                <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence4Details"
+                     aria-expanded="false" aria-controls="competence4Details">
+                    <h5 class="card-title text-center">
                         Gérer
                     </h5>
                     <p class="card-text text-center">Optimiser une base de données, interagir avec une application et
@@ -338,7 +343,8 @@
                     <div class="card-body ">
                         <h5>EasyFunds(terminé)</h5>
                         <div class="container-fluid d-flex align-items-center">
-                            <a class="img-project" target="_blank" rel="noreferrer" href="https://damien-tremerie.go.yj.fr/easyfunds2/login.php">
+                            <a class="img-project" target="_blank" rel="noreferrer"
+                               href="https://damien-tremerie.go.yj.fr/easyfunds2/login.php">
                                 <img src="projects/easyfund.png"
                                      alt="Projet lié à Développement Web"
                                      loading="lazy"
@@ -373,9 +379,9 @@
 
             <!-- Compétence 5 -->
             <div class="card my-3">
-                <div class="card-body">
-                    <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#competence5Details"
-                        aria-expanded="false" aria-controls="competence5Details">
+                <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence5Details"
+                     aria-expanded="false" aria-controls="competence5Details">
+                    <h5 class="card-title text-center">
                         Conduire
                     </h5>
                     <p class="card-text text-center">Appliquer une démarche de suivi de projet en fonction des besoins
@@ -414,9 +420,9 @@
 
             <!-- Compétence 6 -->
             <div class="card my-3">
-                <div class="card-body">
-                    <h5 class="card-title text-center" data-bs-toggle="collapse" data-bs-target="#competence6Details"
-                        aria-expanded="false" aria-controls="competence6Details">
+                <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence6Details"
+                     aria-expanded="false" aria-controls="competence6Details">
+                    <h5 class="card-title text-center">
                         Collaborer
                     </h5>
                     <p class="card-text text-center">Situer son rôle et ses missions au sein d'une équipe
@@ -424,9 +430,10 @@
                 </div>
                 <div class="collapse" id="competence6Details">
                     <div class="card-body">
-                        <h5>Tchou-Tchou (en cour)</h5>
+                        <h5>Tchou-Tchou (Terminé)</h5>
                         <div class="container-fluid d-flex align-items-center">
-                            <a class="img-project" target="_blank" rel="noreferrer" href="http://localhost/Tchou-Tchou/web/search.php">
+                            <a class="img-project" target="_blank" rel="noreferrer"
+                               href="http://localhost/Tchou-Tchou/web/search.php">
                                 <img src="projects/tchou-tchou.png"
                                      alt="Projet lié à Développement Web"
                                      loading="lazy"
@@ -475,6 +482,7 @@
             <button type="submit" class="btn btn-light my-2">Envoyer</button>
         </form>
     </section>
+
     <div class="scroll-to-top background-blue" onclick="scrollToTop()">
         <span>&uarr;</span>
     </div>
@@ -509,68 +517,20 @@
 </script>
 <script>
     document.querySelectorAll('.collapse').forEach((collapseElement) => {
-        collapseElement.addEventListener('shown.bs.collapse', function () {
-            // Étendre la carte à 100% lorsque le collapse est ouvert
-            const card = this.closest('.card');
-            card.style.width = '100%';
+        const card = collapseElement.closest('.card');
+
+        // AVANT ouverture → on force la largeur
+        collapseElement.addEventListener('show.bs.collapse', function () {
+            card.style.flex = '0 0 100%';
+            card.style.maxWidth = '100%';
         });
 
+        // APRÈS fermeture → on remet la taille normale
         collapseElement.addEventListener('hidden.bs.collapse', function () {
-            // Réduire la carte à sa largeur initiale
-            const card = this.closest('.card');
-            card.style.width = '18rem';
+            card.style.flex = '0 0 18rem';
+            card.style.maxWidth = '18rem';
         });
     });
-</script>
-<script>
-    // Fonction pour vérifier quelle section est actuellement dans le viewport
-    function updateActiveLink() {
-        const sections = document.querySelectorAll('section');
-        const links = document.querySelectorAll('nav .nav-link');
-
-        let found = false;
-
-        sections.forEach((section, index) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-                // Si la section est visible dans le viewport
-                links.forEach(link => link.classList.remove('active'));  // Enlever la classe active de tous les liens
-                links[index].classList.add('active');  // Ajouter la classe active au lien correspondant
-                found = true;
-            }
-        });
-
-        // Si aucune section n'est dans le viewport, on retire la classe active de tous les liens
-        if (!found) {
-            links.forEach(link => link.classList.remove('active'));
-        }
-    }
-
-    // Écoute les événements de scroll et de chargement de la page
-    window.addEventListener('scroll', updateActiveLink);
-    window.addEventListener('load', updateActiveLink);
-
-    function checkPosition() {
-        const scrollToTopButton = document.querySelector('.scroll-to-top');
-        const footer = document.querySelector('footer'); // S'assurer qu'il y a un footer
-        const footerRect = footer.getBoundingClientRect();
-
-        // Vérifie si l'utilisateur est en bas de la page et ne se superpose pas au footer
-        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - footerRect.height) {
-            // Si on est tout en bas de la page, on place le bouton juste au-dessus du footer
-            scrollToTopButton.style.bottom = footerRect.height + 20 + 'px';
-        } else {
-            // Si on n'est pas en bas de la page, le bouton reste à 20px du bas
-            scrollToTopButton.style.bottom = '20px';
-        }
-    }
-
-    // Appel initial pour ajuster la position dès le chargement de la page
-    checkPosition();
-
-    // Appel lors de chaque scroll
-    window.addEventListener('scroll', checkPosition);
-
 </script>
 </body>
 </html>

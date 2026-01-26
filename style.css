@@ -74,7 +74,7 @@ img {
 
 .card {
     width: 18rem;
-    transition: width 0.5s ease; /* Transition fluide lors du changement de largeur */
+    transition: flex-basis 0.3s ease, max-width 0.3s ease; /* Transition fluide lors du changement de largeur */
     background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%);  /* Dégradé de bleu à noir */
     border: 1px solid #3381c7; /* Bordure bleu pour l'harmonie */
     color: #ffffff;
