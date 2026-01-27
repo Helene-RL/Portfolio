@@ -75,7 +75,7 @@ img {
 .card {
     width: 18rem;
     transition: flex-basis 0.3s ease, max-width 0.3s ease; /* Transition fluide lors du changement de largeur */
-    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%);  /* Dégradé de bleu à noir */
+    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%); /* Dégradé de bleu à noir */
     border: 1px solid #3381c7; /* Bordure bleu pour l'harmonie */
     color: #ffffff;
 }
@@ -100,7 +100,7 @@ img {
     transform: translateY(-5px); /* Légère élévation pour l'effet */
 }
 
-.lien-projet{
+.lien-projet {
     color: #006dc2;
     text-decoration: none;
 }
@@ -137,4 +137,57 @@ img {
     .presentation {
         width: 100%;
     }
+}
+
+/* =========================
+   PAGE PROJET (SCOPED)
+========================= */
+
+.project-page section {
+    min-height: auto;
+    padding-top: 2rem;
+}
+
+/* Désactiver les styles globaux de carte */
+.project-page .card {
+    width: 100%;
+    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%);
+    border: none;
+    color: white;
+    transition: none;
+    transform: none;
+}
+
+.project-page .card-body {
+    background: none;
+    border-radius: 0;
+    font-size: 1rem;
+}
+
+/* Header bleu du projet */
+.project-page .project-header {
+    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%);
+    border-radius: 15px;
+}
+
+/* Badges technos */
+.project-page .badge {
+    background-color: #3381c7;
+}
+
+/* Images */
+.project-page img {
+    object-fit: contain;
+    max-height: 350px;
+}
+
+/* Textes */
+.project-page h3 {
+    color: #3381c7;
+}
+
+/* Fond général */
+.project-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
 }
