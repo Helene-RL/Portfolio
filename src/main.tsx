@@ -1,0 +1,447 @@
+import React, {StrictMode} from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App'
+
+createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+        <App />
+    </StrictMode>,
+)
+{/*
+    <body>
+
+    <div class="container-fluid d-flex flex-column w-100 scrollspy-example"
+         data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%"
+         data-bs-smooth-scroll="true" tabindex="0">
+
+        <!-- accueil -->
+        <section id="accueil"
+                 class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+            <h1 class="pb-4">Bienvenue sur mon portfolio</h1>
+            <a href="images/cv.pdf" download="cv.pdf">
+                <button type="button" class="btn btn-primary background-blue"><b>Télécharger mon cv</b></button>
+            </a>
+        </section>
+
+        <!-- presentation -->
+        <section id="presentation"
+                 class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+            <h2 class="">Présentation</h2>
+            <div class="container-fluid d-flex justify-content-center align-items-center pt-3">
+                <div class="presentation">
+                    <h3 class="pb-3">Apprendre à me connaître !</h3>
+                    <div class="text-start">
+                        <p>Bonjour! Je m'appelle
+                            <strong>Hélène Ralu--Leroy</strong> et je suis
+                            <strong>étudiante en 3<sup>ème</sup> année de BUT
+                                informatique
+                            </strong>
+                            à l'IUT de Marne la Vallée.
+                        </p>
+                        <p>Je suis actuellement un contrat d'alternance Caseware France.
+                        </p>
+                        <p>Je suis curieuse et ouverte d'esprit, j'aime
+                            travailler sur des problématiques variées. J'aime
+                            bien coder et découvrir de nouvelles choses. J'ai
+                            déjà réalisé plusieurs projets web avec des équipes.
+                            N'hésitez pas à me contacter.
+                        </p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary background-blue"><b>Contact</b></a>
+                </div>
+                <img class="img-fluid rounded h-auto mx-3 img-presentation" src="images/photo_profil.jpg"
+                     alt="ma photo"/>
+            </div>
+        </section>
+
+        <!-- resume -->
+        <section id="resume"
+                 class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+            <h2 class="">Résumé</h2>
+            <div class="container-fluid d-flex">
+                <div class="container-fluid d-flex flex-column">
+                    <h4 class="">Formation</h4>
+                    <div class="bg-primary m-2 p-1 rounded-4 text-white fw-semibold background-blue">
+                        <span class="">2023-2026</span><br/>
+                        <span class="">BUT informatique</span><br/>
+                        IUT de Marne la Vallée - Champs-sur-Marne
+                    </div>
+                    <div class="bg-primary m-2 p-1 rounded-4 text-white fw-semibold background-blue">
+                        <span class="">2022-2023</span><br/>
+                        <span class="">Baccalauréat général</span><br/>
+                        Lycée Arago - Paris
+                    </div>
+                    <div class="bg-primary m-2 p-1 rounded-4 text-white fw-semibold background-blue">
+                        <span class="">2019-2020</span><br/>
+                        <span class="">Brevet</span><br/>
+                        Collège Robert Doisneau - Paris
+                    </div>
+                </div>
+                <div class="container-fluid d-flex flex-column fw-semibold">
+                    <h4>Expérience</h4>
+                    <div class="bg-primary m-2 p-1 rounded-4 text-white background-blue">
+                        <span class=""> 2024-2026 </span><br/>
+                        <span class="">Alternance</span><br/>
+                        Caseware France - Paris
+                    </div>
+                    <div class="bg-primary m-2 p-1 rounded-4 text-white background-blue">
+                        <span class=""> 2019-2019 </span><br/>
+                        <span class="">Stage</span><br/>
+                        CEA - Fontenay-aux-Roses
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- hard skills -->
+        <section id="hard_skills"
+                 class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+            <h3 class="pt-4">Hard Skills</h3>
+            <div class="d-flex flex-wrap text-center justify-content-center align-items-center">
+                <div class="p-2 text-center">
+                    <p>HTML</p>
+                    <img src="images/html.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>CSS</p>
+                    <img src="images/css.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>JS</p>
+                    <img src="images/js.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>PHP</p>
+                    <img src="images/php.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>Python</p>
+                    <img src="images/python.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>MySQL</p>
+                    <img src="images/sql.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>PostGreSQL</p>
+                    <img src="images/postgresql.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>C</p>
+                    <img src="images/c.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>Java</p>
+                    <img src="images/java.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>Figma</p>
+                    <img src="images/figma-logo.svg" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>TypeScript</p>
+                    <img src="images/typescript.png" alt="" class="img-competence"/>
+                </div>
+                <div class="p-2 text-center">
+                    <p>React</p>
+                    <img src="images/react.png" alt="" class="img-competence"/>
+                </div>
+            </div>
+        </section>
+
+        <!-- compétences -->
+        <section id="competences"
+                 class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+            <h2>Compétences</h2>
+            <div class="container-fluid d-flex flex-wrap justify-content-around">
+                <!-- Compétence 1 -->
+                <div class="card card-portfolio my-3">
+                    <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence1Details"
+                         aria-expanded="false" aria-controls="competence1Details">
+                        <h5 class="card-title text-center">
+                            Réaliser
+                        </h5>
+                        <p class="card-text text-center">Partir des exigences et aller jusqu'à une application complète.</p>
+                    </div>
+                    <div class="collapse" id="competence1Details">
+                        <div class="card-body d-flex justify-content-center">
+                            <div class="card project text-white border border-dark shadow-sm">
+                                <div class="card-header text-center fw-bold">
+                                    BUT 2
+                                </div>
+                                <img src="projects/wikiadventure.png" class="card-img-top"
+                                     alt="Projet lié à Développement Web">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">WikiAdventure (terminé)</h5>
+                                        <p class="card-text">Jeu stratégique basé sur la navigation d’articles Wikipedia dans un
+                                            contexte compétitif.</p>
+                                        <a href="project.php?project=wikiadventure" class="btn btn-primary border">Voir le projet</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétence 2 -->
+                <div class="card card-portfolio my-3">
+                    <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence2Details"
+                         aria-expanded="false" aria-controls="competence2Details">
+                        <h5 class="card-title text-center">
+                            Optimiser
+                        </h5>
+                        <p class="card-text text-center">Sélectionner les algorithmes adéquats pour répondre à un problème
+                            donné</p>
+                    </div>
+                    <div class="collapse" id="competence2Details">
+                        <div class="card-body d-flex justify-content-center">
+                            <div class="card project text-white border border-dark shadow-sm">
+                                <div class="card-header text-center fw-bold">
+                                    BUT 2
+                                </div>
+                                <img src="projects/travia.png" class="card-img-top"
+                                     alt="Projet lié à Développement Web">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Travia (terminé)</h5>
+                                        <p class="card-text">Jeu stratégique basé sur la navigation d’articles Wikipedia dans un
+                                            contexte compétitif.</p>
+                                        <a href="project.php?project=travia" class="btn btn-primary border">Voir le projet</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétence 3 -->
+                <div class="card card-portfolio my-3">
+                    <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence3Details"
+                         aria-expanded="false" aria-controls="competence3Details">
+                        <h5 class="card-title text-center">
+                            Administrer
+                        </h5>
+                        <p class="card-text text-center">Déployer des services dans une infrastructure réseau</p>
+                    </div>
+                    <div class="collapse" id="competence3Details">
+                        <div class="card-body d-flex justify-content-center">
+                            <div class="card project text-white border border-dark shadow-sm">
+                                <div class="card-header text-center fw-bold">
+                                    BUT 2
+                                </div>
+                                <img src="projects/tp_reseau.png" class="card-img-top"
+                                     alt="Projet lié à Développement Web">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Tp de réseau</h5>
+                                        <p class="card-text">Jeu stratégique basé sur la navigation d’articles Wikipedia dans un
+                                            contexte compétitif.</p>
+                                        <a href="project.php?project=tp_reseau" class="btn btn-primary border">Voir le projet</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétence 4 -->
+                <div class="card card-portfolio my-3">
+                    <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence4Details"
+                         aria-expanded="false" aria-controls="competence4Details">
+                        <h5 class="card-title text-center">
+                            Gérer
+                        </h5>
+                        <p class="card-text text-center">Optimiser une base de données, interagir avec une application et
+                            mettre en œuvre la sécurité</p>
+                    </div>
+                    <div class="collapse" id="competence4Details">
+                        <div class="card-body ">
+                            <h5>EasyFunds(terminé)</h5>
+                            <div class="container-fluid d-flex align-items-center">
+                                <a class="img-project" target="_blank" rel="noreferrer"
+                                   href="https://damien-tremerie.go.yj.fr/easyfunds2/login.php">
+                                    <img src="projects/easyfund.png"
+                                         alt="Projet lié à Développement Web"
+                                         loading="lazy"
+                                         class="img-fluid w-auto border border-3 border-dark"/>
+                                </a>
+                                <div class="mt-2 mx-5 text-start w-100">
+                                    <p>
+                                        L’objectif de ce projet était de créer un site de suivi d’activités monétiques au
+                                        quotidien
+                                        pour les entreprises afin qu'elles puissent suivre leurs dépenses quotidienne.
+                                        L’application web
+                                        devait pouvoir gérer différents types d’utilisateurs : Administrateur, Product Owner
+                                        et Client;
+                                        avec chacun leurs spécificités et des attendus divers.
+                                    </p>
+                                    <p>Fait avec:
+                                        <a class="lien-projet" target="_blank"
+                                           href="https://www.linkedin.com/in/damien-tremerie/">Damien
+                                            Tremeri</a>,
+                                        <a class="lien-projet" target="_blank"
+                                           href="https://www.linkedin.com/in/romain-loncin/">Romain
+                                            Loncin</a>,
+                                        <a class="lien-projet" target="_blank"
+                                           href="https://www.linkedin.com/in/emilie-qiaoxin-xu/">Emilie
+                                            Xu</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétence 5 -->
+                <div class="card card-portfolio my-3">
+                    <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence5Details"
+                         aria-expanded="false" aria-controls="competence5Details">
+                        <h5 class="card-title text-center">
+                            Conduire
+                        </h5>
+                        <p class="card-text text-center">Appliquer une démarche de suivi de projet en fonction des besoins
+                            métiers des clients et des utilisateurs</p>
+                    </div>
+                    <div class="collapse" id="competence5Details">
+                        <div class="card-body">
+                            <h5>Projet Personnelle: Les créations de Julie (en pause)</h5>
+                            <div class="container-fluid d-flex align-items-center">
+                                <a class="img-project" target="_blank" rel="noreferrer"
+                                   href="http://atout-accessibilite.fr/doudous/index.php">
+                                    <img src="projects/petit_creation.png"
+                                         alt="Projet lié à Développement Web"
+                                         loading="lazy"
+                                         class="img-fluid w-auto border border-3 border-dark"/>
+                                </a>
+                                <div class="mt-2 mx-5 text-start w-100">
+                                    <p>
+                                        Ce projet a vu le jour en collaboration avec un expert en accessibilité, dans le but
+                                        de créer un site de vente en ligne dédié aux doudous faits main. L'objectif était de
+                                        concevoir un site simple et attrayant pour présenter et vendre ces créations
+                                        uniques, tout en assurant une accessibilité optimale pour tous les utilisateurs, y
+                                        compris ceux ayant des besoins spécifiques en matière d'accessibilité numérique. Le
+                                        site devait permettre aux clients de découvrir et d’acheter les doudous, tout en
+                                        offrant une navigation fluide et inclusive.
+                                    </p>
+                                    <p>Fait avec:
+                                        <a class="lien-projet" target="_blank"
+                                           href="https://www.linkedin.com/in/julie-leroy-aa671a5a/">Julie Leroy</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétence 6 -->
+                <div class="card card-portfolio my-3">
+                    <div class="card-body" data-bs-toggle="collapse" data-bs-target="#competence6Details"
+                         aria-expanded="false" aria-controls="competence6Details">
+                        <h5 class="card-title text-center">
+                            Collaborer
+                        </h5>
+                        <p class="card-text text-center">Situer son rôle et ses missions au sein d'une équipe
+                            informatique</p>
+                    </div>
+                    <div class="collapse" id="competence6Details">
+                        <div class="card-body">
+                            <h5>Tchou-Tchou (Terminé)</h5>
+                            <div class="container-fluid d-flex align-items-center">
+                                <a class="img-project" target="_blank" rel="noreferrer"
+                                   href="http://localhost/Tchou-Tchou/web/search.php">
+                                    <img src="projects/tchou-tchou.png"
+                                         alt="Projet lié à Développement Web"
+                                         loading="lazy"
+                                         class="img-fluid w-auto border border-3 border-dark"/>
+                                </a>
+                                <div class="mt-2 mx-5 text-start w-100">
+                                    <p>
+                                        L’objectif de ce projet était de concevoir et de développer une plateforme moderne,
+                                        intuitive et sécurisée qui permette aux voyageurs de réserver facilement leurs
+                                        billets TGV. Le site devait offrir des fonctionnalités pratiques telles que la
+                                        recherche de trajets, la gestion des réservations et le paiement en ligne.
+                                    </p>
+                                    <p>Fait avec:
+                                        <a class="lien-projet" target="_blank"
+                                           href="https://www.linkedin.com/in/damien-tremerie/">Damien
+                                            Tremeri</a>,
+                                        <a class="lien-projet" target="_blank"
+                                           href="https://www.linkedin.com/in/romain-loncin/">Romain
+                                            Loncin</a>,
+                                        <a class="lien-projet" target="_blank"
+                                           href="https://www.linkedin.com/in/rissot/">Benjamin Rissot
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact"
+                 class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+            <h2>Contact</h2>
+            <h6>N'hésitez pas à me contacter, je suis joignable du lundi au vendredi de 8h à 18h.</h6>
+            <form action="mailto:helene.raluleroy@gmail.com" method="post"
+                  class="bg-primary mx-auto my-2 px-5 py-2 rounded background-blue text-start text-light">
+                <label for="name" class="form-label">Nom</label>
+                <input required placeholder="Entrer votre nom" class="form-control" type="text" name="name" id="name"/>
+                <label for="email" class="form-label">Email</label>
+                <input required placeholder="Entrer votre Email" class="form-control" type="email" name="email" id="email"/>
+                <label for="message" class="form-label">Message</label>
+                <textarea required cols="30" rows="6" placeholder="Entrer votre Message" class="form-control"
+                          id="message"></textarea>
+                <button type="submit" class="btn btn-light my-2">Envoyer</button>
+            </form>
+        </section>
+
+        <div class="scroll-to-top background-blue" onclick="scrollToTop()">
+            <span>&uarr;</span>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid d-flex justify-content-center align-items-center text-center bg-black text-light py-2">
+        <div class="d-flex flex-column w-50 justify-content-center">
+            <a target="_blank"
+               rel="noreferrer"
+               href="http://www.linkedin.com/in/hélène-ralu-leroy-b344872a1">
+                <img src="logo/linkedin-ico.png" alt="" class="w-0"/>
+            </a>
+        </div>
+        <div class="d-flex flex-column w-50 justify-content-center">
+            <p class="mb-0">
+                Hélène Ralu--Leroy<br>
+                helene.raluleroy@gmail.com<br>
+                07 68 47 08 73<br>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script pour le bouton qui permet de remonter en haut -->
+    <script>
+        function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
+    </script>
+    <script>
+        document.querySelectorAll('.collapse').forEach((collapseElement) => {
+        const card = collapseElement.closest('.card');
+
+        // AVANT ouverture → on force la largeur
+        collapseElement.addEventListener('show.bs.collapse', function () {
+        card.style.flex = '0 0 100%';
+        card.style.maxWidth = '100%';
+    });
+
+        // APRÈS fermeture → on remet la taille normale
+        collapseElement.addEventListener('hidden.bs.collapse', function () {
+        card.style.flex = '0 0 18rem';
+        card.style.maxWidth = '18rem';
+    });
+    });
+    </script>
+    </body>
+    </html>
+*/}
