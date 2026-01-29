@@ -11,8 +11,8 @@ export const ProjectCard = (props: { id: string, annee: string, title: string, i
             <div className="card-body text-center">
                 <h5 className="card-title">{props.title}</h5>
                 <p className="card-text">{props.description}</p>
-                <a href=""
-                   className="btn btn-primary border">Voir le projet</a>
+                <a href={`/project/${props.id}`}
+                    className="btn btn-primary border">Voir le projet</a>
             </div>
         </div>
     )
