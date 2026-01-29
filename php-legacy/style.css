@@ -72,19 +72,6 @@ img {
     min-height: 25em;
 }
 
-.card {
-    width: 18rem;
-    transition: flex-basis 0.3s ease, max-width 0.3s ease; /* Transition fluide lors du changement de largeur */
-    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%); /* Dégradé de bleu à noir */
-    border: 1px solid #3381c7; /* Bordure bleu pour l'harmonie */
-    color: #ffffff;
-}
-
-.card-body {
-    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%); /* Corps de la carte avec dégradé */
-    border-radius: 15px;
-}
-
 .card.collapsing {
     width: 100% !important;
 }
@@ -94,11 +81,6 @@ img {
     width: 100% !important;
 }
 
-.card:hover {
-    background: linear-gradient(135deg, #2c6fa4 0%, #5498d3 100%); /* Dégradé un peu plus foncé pour le survol */
-    border-color: #2c6fa4; /* Bordure plus foncée */
-    transform: translateY(-5px); /* Légère élévation pour l'effet */
-}
 
 .lien-projet {
     color: #006dc2;
@@ -137,6 +119,31 @@ img {
     .presentation {
         width: 100%;
     }
+}
+
+/* =========================
+   CARTES DU PORTFOLIO
+========================= */
+
+.card-portfolio {
+    width: 18rem;
+    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%);
+    border: 1px solid #3381c7;
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+.card-portfolio:hover {
+    transform: translateY(-5px);
+}
+
+.card-portfolio .card-body {
+    background: transparent;
+}
+
+.card-portfolio .project {
+    width: 18rem;
+    background-color: #5fa1de
 }
 
 /* =========================
