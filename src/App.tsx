@@ -8,11 +8,14 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/index.html" element={<HomePage />} />
                 <Route path="/project/:projectKey" element={<ProjectPage />} />
             </Routes>
         </Router>
     );
 }
+
+{/*
+si ca fonctionne pas essayer avec un useStat et passer le project en paramettre
+*/}
 
 export default App;

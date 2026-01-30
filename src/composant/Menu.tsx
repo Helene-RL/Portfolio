@@ -1,10 +1,15 @@
-// @ts-ignore
 import React from "react"
 
 export const NavItem = (props: { label: string, anchor: string }) => {
+    const handleClick = () => {
+        const element = document.getElementById(props.anchor);
+        element?.scrollIntoView({ behavior: "smooth" });
+    };
     return (
         <li className="nav-item">
-            <a href={`#${props.anchor}`} className="nav-link">{props.label}</a>
+            <button
+                onClick={handleClick}
+                className="nav-link btn btn-link">{props.label}</button>
         </li>
     )
 }

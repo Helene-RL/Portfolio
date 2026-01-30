@@ -8,7 +8,7 @@ export const Footer = () => {
                 <a target="_blank"
                    rel="noreferrer"
                    href="https://www.linkedin.com/in/hélène-ralu-leroy-b344872a1">
-                    <img src="/src/logo/linkedin-ico.png" alt="" className="w-0"/>
+                    <img src={`${import.meta.env.BASE_URL}logo/linkedin-ico.png`} alt="" className="w-0"/>
                 </a>
             </div>
             <div className="d-flex flex-column w-50 justify-content-center">

@@ -4,7 +4,7 @@ export const Skill = (props: { label: string, img: string }) => {
     return (
         <div className="p-2 text-center">
             <p>{props.label}</p>
-            <img src={`/src/images/${props.img}`} alt={props.label} className="img-competence"/>
+            <img src={`${import.meta.env.BASE_URL}images/${props.img}`} alt={props.label} className="img-competence"/>
         </div>
     )
 }

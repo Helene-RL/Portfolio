@@ -87,7 +87,7 @@ export const HomePage = () => {
                  data-bs-smooth-scroll="true" tabIndex={0}>
                 {/*accueil*/}
                 <Section id="accueil" name="Bienvenue sur mon portfolio" level={1}>
-                    <a href="images/cv.pdf" download="cv.pdf">
+                    <a href={`${import.meta.env.BASE_URL}images/cv.pdf`} download="cv.pdf">
                         <button type="button" className="btn btn-primary background-blue"><b>Télécharger mon cv</b>
                         </button>
                     </a>
@@ -112,7 +112,7 @@ export const HomePage = () => {
                             <a href="#contact" className="btn btn-primary background-blue"><b>Contact</b></a>
                         </div>
                         <img className="img-fluid rounded h-auto mx-3 img-presentation"
-                             src="/src/images/photo_profil.jpg"
+                             src={`${import.meta.env.BASE_URL}images/photo_profil.jpg`}
                              alt="ma photo"/>
                     </div>
                 </Section>

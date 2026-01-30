@@ -1,5 +1,5 @@
 import React from "react";
-import {useParams, useNavigate} from "react-router-dom";
+import {useParams, useNavigate, Link} from "react-router-dom";
 import {projects} from "./data/projectsData";
 import {people} from "./data/people";
 
@@ -8,13 +8,13 @@ const ProjectPage = () => {
     const navigate = useNavigate();
 
     if (!projectKey) {
-        navigate("/"); // redirection si projectKey inexistant
+        navigate("/#competences"); // redirection si projectKey inexistant
         return null;
     }
     const project = projects[projectKey];
 
     if (!project) {
-        navigate("/"); // redirection si projet inexistant
+        navigate("/#competences"); // redirection si projet inexistant
         return null;
     }
 
@@ -23,9 +23,9 @@ const ProjectPage = () => {
         <div className="project-page">
             <div className="container my-5">
 
-                <a href="../index.html#competences" className="btn btn-outline-primary mb-4">
+                <Link to="/#competences" className="btn btn-outline-primary mb-4">
                     ← Retour au portfolio
-                </a>
+                </Link>
 
                 <div className="card border-0 mb-4 project-header">
                     <div className="text-white text-center py-5">
@@ -35,7 +35,7 @@ const ProjectPage = () => {
                 </div>
 
                 <div className="text-center mb-4">
-                    <img src={`/src/images/${project.image}`}
+                    <img src={`/images/${project.image}`}
                          alt={project.title}
                          className="img-fluid rounded"
                          style={{maxHeight: "350px"}}/>

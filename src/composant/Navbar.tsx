@@ -20,7 +20,7 @@ export const Navbar = () => {
             <div className="container-fluid">
                 <a href="#accueil" className="navbar-brand">
                     <img
-                        src="/src/images/photo_profil.jpg"
+                        src={`${import.meta.env.BASE_URL}images/photo_profil.jpg`}
                         alt="photo de profil"
                         className="img-fluid rounded-circle border border-2 border-light"
                         style={{width: "2em"}}
