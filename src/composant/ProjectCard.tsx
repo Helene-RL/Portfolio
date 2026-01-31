@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 export const ProjectCard = (props: { id: string, annee: string, title: string, img: string, description: string }) => {
     return (
-        <div className="card project text-white border border-dark shadow-sm">
+        <div className="card project text-white border border-dark shadow-sm mx-1">
             <div className="card-header text-center fw-bold">
                 {props.annee}
             </div>

@@ -8,6 +8,7 @@ import {Footer} from "./composant/Footer";
 import React from "react";
 import {projects} from "./data/projectsData";
 import "./style.css"
+import {PortfolioCollapses} from "./composant/PortfolioCollapse";
 
 const FormationData = [
     {date: "2023-2026", name: "BUT informatique", place: "IUT de Marne la Vallée - Champs-sur-Marne"},
@@ -39,12 +40,12 @@ const competences = [
     {
         name: "Realiser",
         description: "Partir des exigences et aller jusqu'à une application complète.",
-        projects: [projects.wikiadventure]
+        projects: [projects.qix, projects.wikiadventure]
     },
     {
         name: "Optimiser",
         description: "Sélectionner les algorithmes adéquats pour répondre à un problème donné",
-        projects: [projects.travia]
+        projects: [projects.travia, projects.qix_optimisation]
     },
     {
         name: "Administrer",
@@ -54,7 +55,7 @@ const competences = [
     {
         name: "Gérer",
         description: "Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité",
-        projects: [projects.easyfund]
+        projects: [projects.primeur_passion, projects.easyfund]
     },
     {
         name: "Conduire",
@@ -64,7 +65,7 @@ const competences = [
     {
         name: "Collaborer",
         description: "Situer son rôle et ses missions au sein d'une équipe informatique",
-        projects: [projects.tchoutchou]
+        projects: [projects.unesco, projects.tchoutchou]
     }
 ];
 
@@ -149,6 +150,7 @@ export const HomePage = () => {
             </div>
             {/*footer*/}
             <Footer/>
+            <PortfolioCollapses />
         </>
     )
 }

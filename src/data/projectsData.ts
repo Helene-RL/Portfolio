@@ -2,7 +2,6 @@ export type Project = {
     id: string;
     title: string;
     year: string;
-    competence: string;
     description_card: string;
     description: string;
     context: string;
@@ -18,7 +17,6 @@ export const projects: Record<string, Project> = {
         id: "wikiadventure",
         title: "WikiAdventure (terminé)",
         year: "BUT 2",
-        competence: "Realiser",
         description_card:
             "Le jeu repose sur l’idée d’utiliser Wikipedia pour créer une expérience ludique et éducative.",
         description:
@@ -31,15 +29,13 @@ export const projects: Record<string, Project> = {
         ],
         technos: ["React", "TypeScript", "API Wikipedia"],
         image: "wikiadventure.png",
-        url: "",
-        faitAvec: ["Damien Tremeri", "Romain Loncin"],
+        faitAvec: ["Damien Tremerie", "Romain Loncin"],
     },
 
     travia: {
         id: "travia",
         title: "Travia (terminé)",
         year: "BUT 2",
-        competence: "Optimiser",
         description_card:
             "Créer un site web proposant des voyages optimisés dans l’univers de Star Wars.",
         description:
@@ -48,15 +44,13 @@ export const projects: Record<string, Project> = {
         objectives: [],
         technos: ["C", "PHP", "Java", "HTML", "CSS", "JS", "Graphe", "BDD"],
         image: "travia.png",
-        url: "http://localhost/Travia/Account/login_form.php",
-        faitAvec: ["Damien Tremeri", "Romain Loncin", "Emilie Xu"],
+        faitAvec: ["Damien Tremerie", "Romain Loncin", "Emilie Xu"],
     },
 
     tp_reseau: {
         id: "tp_reseau",
         title: "TP de réseau",
         year: "BUT 2",
-        competence: "Administrer",
         description_card:
             "Travaux pratiques en réseau pour développer des compétences solides en administration.",
         description:
@@ -65,15 +59,13 @@ export const projects: Record<string, Project> = {
         objectives: [],
         technos: ["DNS", "DHCP", "Serveur Web"],
         image: "tp_reseau.png",
-        url: "",
-        faitAvec: ["Damien Tremeri", "Romain Loncin"],
+        faitAvec: ["Damien Tremerie", "Romain Loncin"],
     },
 
     easyfund: {
         id: "easyfund",
         title: "EasyFunds (terminé)",
         year: "BUT 2",
-        competence: "Gérer",
         description_card:
             "Créer un site de suivi d’activités monétiques pour les entreprises.",
         description:
@@ -82,15 +74,14 @@ export const projects: Record<string, Project> = {
         objectives: [],
         technos: ["PHP", "MySQL", "HTML", "CSS", "JS"],
         image: "easyfund.png",
-        url: "https://damien-tremerie.go.yj.fr/easyfunds2/login.php",
-        faitAvec: ["Damien Tremeri", "Romain Loncin", "Emilie Xu"],
+        url: "https://damien-Tremeriee.go.yj.fr/easyfunds2/login.php",
+        faitAvec: ["Damien Tremerie", "Romain Loncin", "Emilie Xu"],
     },
 
     petit_creation: {
         id: "petit_creation",
         title: "Les créations de Julie (en pause)",
         year: "Projet Personnel",
-        competence: "Conduire",
         description_card:
             "Site e-commerce pour doudous faits main avec focus sur l’accessibilité.",
         description:
@@ -102,12 +93,10 @@ export const projects: Record<string, Project> = {
         url: "http://atout-accessibilite.fr/doudous/index.php",
         faitAvec: ["Julie Leroy"],
     },
-
     tchoutchou: {
         id: "tchoutchou",
         title: "Tchou-Tchou (Terminé)",
         year: "BUT 2",
-        competence: "Collaborer",
         description_card:
             "Plateforme moderne pour réserver des billets TGV facilement et en sécurité.",
         description:
@@ -116,7 +105,62 @@ export const projects: Record<string, Project> = {
         objectives: [],
         technos: ["PHP", "HTML", "CSS", "JS", "BDD"],
         image: "tchou-tchou.png",
-        url: "http://localhost/Tchou-Tchou/web/search.php",
-        faitAvec: ["Damien Tremeri", "Romain Loncin", "Benjamin Rissot"],
+        faitAvec: ["Damien Tremerie", "Romain Loncin", "Benjamin Rissot"],
+    },
+    unesco: {
+        id: "unesco",
+        title: "Project Alger(UNESCO) (Terminé)",
+        year: "BUT 1",
+        description_card:
+            "Création d'un site culturel sur Alger en partenariat avec l’Unesco.",
+        description:
+            "Ce projet, développé en collaboration avec l’UNESCO, vise à concevoir un site web dédié à Alger. Cette plateforme en ligne mettra en valeur la richesse et la diversité du patrimoine historique, culturel et urbain de la ville.",
+        context: "",
+        objectives: [],
+        technos: ["PHP", "HTML", "CSS", "JS", "BDD"],
+        image: "Site_Alger.png",
+        faitAvec: ["Martial Carceles", "Loïc Rakotoniary", "Jules Renaud--Grange", "Daniel Dos Santos", "Khephren Djelidi"],
+    },
+    primeur_passion: {
+        id: "primeur_passion",
+        title: "Primeur Passion (Terminé)",
+        year: "BUT 1",
+        description_card:
+            "Creation d'un site de vente fruits et légumes",
+        description:
+            "L’objectif de ce projet était de concevoir et de développer un site de vente de fruits et légumes pour s'exercer à l'utilisation des bases de données.",
+        context: "",
+        objectives: [],
+        technos: ["PHP", "HTML", "CSS", "BDD"],
+        image: "primeur_passion.png",
+        faitAvec: ["Charly Janvier"],
+    },
+    qix: {
+        id: "qix",
+        title: "Qix (Terminé)",
+        year: "BUT 1",
+        description_card:
+            "Qix est un projet Python où le joueur trace des lignes pour capturer des zones tout en évitant un ennemi mouvant et imprévisible.",
+        description:
+            "Qix est un projet développé en Python où le joueur doit remplir l’aire de jeu en traçant des lignes verticales et horizontales, tout en évitant le Qix, un ennemi abstrait qui se déplace librement, ainsi que des obstacles comme les sparx le long des bords. L’objectif est de sécuriser un certain pourcentage du terrain pour passer au niveau suivant, combinant stratégie, rapidité et anticipation dans un environnement minimaliste mais stimulant.",
+        context: "",
+        objectives: [],
+        technos: ["Python"],
+        image: "qix.png",
+        faitAvec: ["Inès Benameur"],
+    },
+    qix_optimisation: {
+        id: "qix_optimisation",
+        title: "Qix Optimisation(Terminé)",
+        year: "BUT 3",
+        description_card:
+            "Optimisation du code d'un project de 1er année: Qix.",
+        description:
+            "Qix est un projet développé en Python où le joueur doit remplir l’aire de jeu en traçant des lignes verticales et horizontales, tout en évitant le Qix, un ennemi abstrait qui se déplace librement, ainsi que des obstacles comme les sparx le long des bords. L’objectif est de sécuriser un certain pourcentage du terrain pour passer au niveau suivant, combinant stratégie, rapidité et anticipation dans un environnement minimaliste mais stimulant.",
+        context: "",
+        objectives: [],
+        technos: ["Python"],
+        image: "qix.png",
+        faitAvec: ["Benjamin Rissot"],
     },
 };

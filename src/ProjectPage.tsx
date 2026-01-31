@@ -35,7 +35,7 @@ const ProjectPage = () => {
                 </div>
 
                 <div className="text-center mb-4">
-                    <img src={`/images/${project.image}`}
+                    <img src={`${import.meta.env.BASE_URL}images/${project.image}`}
                          alt={project.title}
                          className="img-fluid rounded"
                          style={{maxHeight: "350px"}}/>

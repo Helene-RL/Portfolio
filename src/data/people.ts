@@ -1,7 +1,14 @@
 export const people = {
-    "Damien Tremeri": "https://www.linkedin.com/in/damien-tremerie/",
+    "Damien Tremerie": "https://www.linkedin.com/in/damien-tremerie/",
     "Romain Loncin": "https://www.linkedin.com/in/romain-loncin/",
     "Emilie Xu": "https://www.linkedin.com/in/emilie-qiaoxin-xu/",
     "Julie Leroy": "https://www.linkedin.com/in/julie-leroy-aa671a5a/",
-    "Benjamin Rissot": "https://www.linkedin.com/in/rissot/"
+    "Benjamin Rissot": "https://www.linkedin.com/in/rissot/",
+    "Martial Carceles": "https://www.linkedin.com/in/martial-carceles-b5507a252/",
+    "Loïc Rakotoniary": "https://www.linkedin.com/in/lo%C3%AFc-rakotoniary-b2235929a/",
+    "Jules Renaud--Grange": "https://www.linkedin.com/in/julesrenaudgrange/",
+    "Daniel Dos Santos": "https://www.linkedin.com/in/daniel-dos-santos2005/",
+    "Khephren Djelidi": "https://www.linkedin.com/in/khephrendjelidi/",
+    "Charly Janvier": "https://www.linkedin.com/in/charly-janvier-219361269/",
+    "Inès Benameur": "https://www.linkedin.com/in/inesbenameur13/"
 };
