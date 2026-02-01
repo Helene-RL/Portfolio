@@ -14,8 +14,4 @@ function App() {
     );
 }
 
-{/*
-si ca fonctionne pas essayer avec un useStat et passer le project en paramettre
-*/}
-
 export default App;

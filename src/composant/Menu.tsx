@@ -1,9 +1,9 @@
 import React from "react"
+import {scrollToSection} from "./Scroll";
 
 export const NavItem = (props: { label: string, anchor: string }) => {
     const handleClick = () => {
-        const element = document.getElementById(props.anchor);
-        element?.scrollIntoView({ behavior: "smooth" });
+        scrollToSection(props.anchor)
     };
     return (
         <li className="nav-item">

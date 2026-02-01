@@ -2,19 +2,23 @@ import React from "react";
 import {useParams, useNavigate, Link} from "react-router-dom";
 import {projects} from "./data/projectsData";
 import {people} from "./data/people";
+import {scrollToSection} from "./composant/Scroll";
 
 const ProjectPage = () => {
     const {projectKey} = useParams();
     const navigate = useNavigate();
+    const HandleRetour= ()=>{
+        navigate("/");
+    }
 
     if (!projectKey) {
-        navigate("/#competences"); // redirection si projectKey inexistant
+        HandleRetour()
         return null;
     }
     const project = projects[projectKey];
 
     if (!project) {
-        navigate("/#competences"); // redirection si projet inexistant
+        HandleRetour()
         return null;
     }
 
@@ -23,9 +27,9 @@ const ProjectPage = () => {
         <div className="project-page">
             <div className="container my-5">
 
-                <Link to="/#competences" className="btn btn-outline-primary mb-4">
+                <button className="btn btn-outline-primary mb-4" onClick={HandleRetour}>
                     ← Retour au portfolio
-                </Link>
+                </button>
 
                 <div className="card border-0 mb-4 project-header">
                     <div className="text-white text-center py-5">

@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./composant/Navbar";
 import {Section} from "./composant/Section";
 import {Timeline} from "./composant/Timeline";
@@ -5,10 +6,9 @@ import {Skills} from "./composant/Skills";
 import {Competences} from "./composant/Competences";
 import {Form} from "./composant/Form";
 import {Footer} from "./composant/Footer";
-import React from "react";
+import {scrollToSection} from "./composant/Scroll";
 import {projects} from "./data/projectsData";
 import "./style.css"
-import {PortfolioCollapses} from "./composant/PortfolioCollapse";
 
 const FormationData = [
     {date: "2023-2026", name: "BUT informatique", place: "IUT de Marne la Vallée - Champs-sur-Marne"},
@@ -110,7 +110,7 @@ export const HomePage = () => {
                                     plusieurs projets web avec des équipes. N'hésitez pas à me contacter.
                                 </p>
                             </div>
-                            <a href="#contact" className="btn btn-primary background-blue"><b>Contact</b></a>
+                            <button className="btn btn-primary background-blue" onClick={()=>scrollToSection("contact")}><b>Contact</b></button>
                         </div>
                         <img className="img-fluid rounded h-auto mx-3 img-presentation"
                              src={`${import.meta.env.BASE_URL}images/photo_profil.jpg`}
@@ -150,7 +150,6 @@ export const HomePage = () => {
             </div>
             {/*footer*/}
             <Footer/>
-            <PortfolioCollapses />
         </>
     )
 }

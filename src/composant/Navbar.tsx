@@ -1,5 +1,6 @@
 import React from "react"
 import {Menu} from "./Menu";
+import {scrollToSection} from "./Scroll";
 
 const navElements = [
     {label: "Accueil", anchor: "accueil"},
@@ -18,15 +19,15 @@ export const Navbar = () => {
             data-bs-theme="dark"
         >
             <div className="container-fluid">
-                <a href="#accueil" className="navbar-brand">
+                <button className="navbar-brand btn btn-link background-blue" onClick={()=>scrollToSection("accueil")}>
                     <img
                         src={`${import.meta.env.BASE_URL}images/photo_profil.jpg`}
                         alt="photo de profil"
                         className="img-fluid rounded-circle border border-2 border-light"
                         style={{width: "2em"}}
                     />
-                    <span>Hélène Ralu--Leroy</span>
-                </a>
+                    <span className="mx-1">Hélène Ralu--Leroy</span>
+                </button>
 
                 <button
                     className="navbar-toggler"
