@@ -93,7 +93,6 @@ img {
 
 .lien-projet {
     color: #006dc2;
-    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -189,12 +188,6 @@ img {
 /* Badges technos */
 .project-page .badge {
     background-color: #3381c7;
-}
-
-/* Images */
-.project-page img {
-    object-fit: contain;
-    max-height: 350px;
 }
 
 /* Textes */

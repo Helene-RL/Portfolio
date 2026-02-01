@@ -89,7 +89,7 @@ export const HomePage = () => {
                 {/*accueil*/}
                 <Section id="accueil" name="Bienvenue sur mon portfolio" level={1}>
                     <a href={`${import.meta.env.BASE_URL}images/cv.pdf`} download="cv.pdf">
-                        <button type="button" className="btn btn-primary background-blue"><b>Télécharger mon cv</b>
+                        <button type="button" className="btn btn-primary background-blue fw-bold">Télécharger mon cv
                         </button>
                     </a>
                 </Section>
@@ -110,7 +110,7 @@ export const HomePage = () => {
                                     plusieurs projets web avec des équipes. N'hésitez pas à me contacter.
                                 </p>
                             </div>
-                            <button className="btn btn-primary background-blue" onClick={()=>scrollToSection("contact")}><b>Contact</b></button>
+                            <button className="btn btn-primary background-blue fw-bold" onClick={()=>scrollToSection("contact")}>Contact</button>
                         </div>
                         <img className="img-fluid rounded h-auto mx-3 img-presentation"
                              src={`${import.meta.env.BASE_URL}images/photo_profil.jpg`}

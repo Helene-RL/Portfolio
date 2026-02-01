@@ -3,11 +3,13 @@ import {useParams, useNavigate, Link} from "react-router-dom";
 import {projects} from "./data/projectsData";
 import {people} from "./data/people";
 import {scrollToSection} from "./composant/Scroll";
+import {ProjectSection} from "./composant/ProjectSection";
+import {ProjectElement} from "./composant/ProjectElement";
 
 const ProjectPage = () => {
     const {projectKey} = useParams();
     const navigate = useNavigate();
-    const HandleRetour= ()=>{
+    const HandleRetour = () => {
         navigate("/");
     }
 
@@ -22,71 +24,74 @@ const ProjectPage = () => {
         return null;
     }
 
-    // @ts-ignore
     return (
         <div className="project-page">
-            <div className="container my-5">
+            <div className="container-fluid my-1">
 
-                <button className="btn btn-outline-primary mb-4" onClick={HandleRetour}>
+                <button className="btn btn-outline-primary mb-3" onClick={HandleRetour}>
                     ← Retour au portfolio
                 </button>
 
                 <div className="card border-0 mb-4 project-header">
-                    <div className="text-white text-center py-5">
-                        <h1 className="fw-bold">{project.title}</h1>
-                        <p className="mb-0 fs-5">{project.year}</p>
+                    <div className="text-white text-center py-4">
+                        <h2 className="fw-bold">{project.title}</h2>
+                        <p className="mb-0 fs-4">{project.year}</p>
                     </div>
                 </div>
 
-                <div className="text-center mb-4">
-                    <img src={`${import.meta.env.BASE_URL}images/${project.image}`}
-                         alt={project.title}
-                         className="img-fluid rounded"
-                         style={{maxHeight: "350px"}}/>
-                </div>
+                <ProjectSection>
+                    <ProjectElement element={project.image} class="d-flex justify-content-center">
+                        <img src={`${import.meta.env.BASE_URL}projects/${project.image}`}
+                             alt={project.title}
+                             className="img-fluid rounded border border-2" style={{ maxHeight: "25em" }} />
+                    </ProjectElement>
 
-                <p className="fs-5 text-center mb-5">{project['description']}</p>
+                    <ProjectElement element={project.description}>
+                        <p className="fs-6 px-3">{project.description}</p>
+                    </ProjectElement>
+                </ProjectSection>
 
-                <h3 className="mb-3" style={{color: "#4F8FCC"}}>Contexte</h3>
-                <p>{project.context}</p>
+                <ProjectSection>
+                    <ProjectElement title="Contexte" element={project.context}>
+                        <p>{project.context}</p>
+                    </ProjectElement>
 
-
-                <h3 className="mb-3 h3">Objectifs</h3>
-                <div className="row">
-                    {project.objectives.map(objective => (
-                        <div className="col-md-4 mb-3 h3">
-                            <div className="card border-0 shadow-sm h-100">
-                                <div className="card-body text-center">
-                                    {objective}
+                    <ProjectElement title="Objectifs" element={project.objectives}>
+                        <div className="row">
+                            {project.objectives.map((objective: string, index: number) => (
+                                <div key={index} className="col-md-4 mb-3 h3">
+                                    <div className="card border-0 shadow-sm h-100">
+                                        <div className="card-body text-center">
+                                            {objective}
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
-
+                    </ProjectElement>
+                </ProjectSection>
 
                 <hr className="my-4"/>
-                {project.faitAvec && <div>
-                    <h3 className="mb-3 h3">Fait avec</h3>
-                    <ul className="list-unstyled">
-                        {project.faitAvec.map((person) => (
-                            <li>• <a href={people[person]} target="_blank" rel="noopener noreferrer"
-                                     className="lien-projet">{person}</a></li>
-                        ))}
-                    </ul>
-                </div>
-                }
+                <ProjectSection>
+                    <ProjectElement title="Fait avec" element={project.faitAvec}>
+                        <ul className="list-unstyled">
+                            {project.faitAvec.map((person: string, index: number) => (
+                                <li key={index}>• <a href={people[person]} target="_blank" rel="noopener noreferrer"
+                                                     className="lien-projet">{person}</a></li>
+                            ))}
+                        </ul>
+                    </ProjectElement>
 
-
-                <h3 className="mb-3 h3">Technologies utilisées</h3>
-
-                <div className="mb-4">
-                    {project.technos.map(tech => (
-                        <span className="badge rounded-pill me-1 mb-1 background-blue">
-                        {tech}
-                    </span>
-                    ))}
-                </div>
+                    <ProjectElement title="Technologies utilisées" element={project.technos}>
+                        <div className="mb-4">
+                            {project.technos.map((tech: string, index: number) => (
+                                <span key={index} className="badge rounded-pill me-1 mb-1 background-blue">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                    </ProjectElement>
+                </ProjectSection>
 
             </div>
         </div>
