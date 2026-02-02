@@ -28,7 +28,7 @@ const ProjectPage = () => {
         <div className="project-page">
             <div className="container-fluid my-1">
 
-                <button className="btn btn-outline-primary mb-3" onClick={HandleRetour}>
+                <button className="btn mb-3 background-blue text-light" onClick={HandleRetour}>
                     ← Retour au portfolio
                 </button>
 

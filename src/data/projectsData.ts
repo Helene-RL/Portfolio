@@ -149,6 +149,39 @@ export const projects: Record<string, Project> = {
         image: "qix.png",
         faitAvec: ["Inès Benameur"],
     },
+    sae_reseau: {
+        id: "sae_reseau",
+        title: "SAE réseau (Terminé)",
+        year: "BUT 1",
+        description_card:
+            "Mise en place d'un serveur DHCP sur une machine local.",
+        description:
+            "Ce projet consistait à mettre en place et configurer un serveur DHCP sur une machine locale à l’aide de Netkit. L’objectif était de comprendre le fonctionnement de l’attribution automatique d’adresses IP, d’analyser les échanges réseau à l’aide de Wireshark et de manipuler des scripts Bash pour automatiser certaines tâches. Ce travail a permis de renforcer les bases en administration réseau et en compréhension des protocoles. ",
+        context: "Projet universitaire réalisé en BUT Informatique dans le cadre d’une SAE orientée réseaux.",
+        objectives: [
+            "Comprendre le fonctionnement du protocole DHCP",
+            "Configurer un serveur réseau en environnement simulé",
+            "Analyser le trafic réseau avec Wireshark",
+            "Automatiser des tâches via des scripts Bash"
+        ],
+        technos: ["Netkit", "Wireshark", "Bash"],
+        image: "sae_reseau.png",
+        faitAvec: ["Charly Janvier"],
+    },
+    site_vieux: {
+        id: "site_vieux",
+        title: "Ami d'Âge (Terminé)",
+        year: "BUT 1",
+        description_card:
+            "Creation d'un site de rencontre amicale entre personne agés",
+        description:
+            "",
+        context: "Projet universitaire réalisé en BUT Informatique dans le cadre d’une SAE qualité web.",
+        objectives: [],
+        technos: ["HTML", "CSS", "PHP", "BDD"],
+        image: "site_vieux.png",
+        faitAvec: ["Charly Janvier", "Loïc Rakotoniary", "Yevhen Kefa"],
+    },
     qix_optimisation: {
         id: "qix_optimisation",
         title: "Qix Optimisation(Terminé)",
@@ -156,9 +189,14 @@ export const projects: Record<string, Project> = {
         description_card:
             "Optimisation du code d'un project de 1er année: Qix.",
         description:
-            "Qix est un projet développé en Python où le joueur doit remplir l’aire de jeu en traçant des lignes verticales et horizontales, tout en évitant le Qix, un ennemi abstrait qui se déplace librement, ainsi que des obstacles comme les sparx le long des bords. L’objectif est de sécuriser un certain pourcentage du terrain pour passer au niveau suivant, combinant stratégie, rapidité et anticipation dans un environnement minimaliste mais stimulant.",
-        context: "",
-        objectives: [],
+            "Ce projet consiste à reprendre le jeu Qix développé en première année afin d’en améliorer les performances, la lisibilité du code et la structure globale. Le travail a porté sur l’optimisation des algorithmes, la réduction de la complexité inutile, ainsi que sur une meilleure organisation du code pour faciliter sa maintenance et son évolution.",
+        context: "Projet universitaire réalisé en BUT Informatique, dans le cadre d’un travail d’optimisation et de qualité logicielle.",
+        objectives: [
+            "Optimiser les performances du jeu",
+            "Refactoriser le code existant",
+            "Améliorer la lisibilité et la maintenabilité",
+            "Appliquer de bonnes pratiques de développement"
+        ],
         technos: ["Python"],
         image: "qix.png",
         faitAvec: ["Benjamin Rissot"],

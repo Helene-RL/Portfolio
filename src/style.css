@@ -1,10 +1,12 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --couleur-principale: #3381c7
 }
 
 section {
@@ -43,7 +45,7 @@ img {
 }
 
 .color-blue {
-    color: #3381c7 !important;
+    color: var(--couleur-principale) !important;
     text-decoration: none;
 }
 
@@ -53,7 +55,7 @@ img {
 }
 
 .background-blue {
-    background-color: #3381c7 !important;
+    background-color: var(--couleur-principale) !important;
 }
 
 .scroll-to-top {
@@ -135,8 +137,8 @@ img {
 
 .card-portfolio {
     width: 18rem;
-    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%);
-    border: 1px solid #3381c7;
+    background: linear-gradient(135deg, var(--couleur-principale) 0%, #66a8d8 100%);
+    border: 1px solid var(--couleur-principale);
     color: white;
     transition: transform 0.2s ease;
 }
@@ -166,7 +168,7 @@ img {
 /* Désactiver les styles globaux de carte */
 .project-page .card {
     width: 100%;
-    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%);
+    background: linear-gradient(135deg, var(--couleur-principale) 0%, #66a8d8 100%);
     border: none;
     color: white;
     transition: none;
@@ -181,18 +183,18 @@ img {
 
 /* Header bleu du projet */
 .project-page .project-header {
-    background: linear-gradient(135deg, #3381c7 0%, #66a8d8 100%);
+    background: linear-gradient(135deg, var(--couleur-principale) 0%, #66a8d8 100%);
     border-radius: 15px;
 }
 
 /* Badges technos */
 .project-page .badge {
-    background-color: #3381c7;
+    background-color: var(--couleur-principale);
 }
 
 /* Textes */
 .project-page h3 {
-    color: #3381c7;
+    color: var(--couleur-principale);
 }
 
 /* Fond général */

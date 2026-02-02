@@ -50,7 +50,7 @@ const competences = [
     {
         name: "Administrer",
         description: "Déployer des services dans une infrastructure réseau",
-        projects: [projects.tp_reseau]
+        projects: [projects.sae_reseau, projects.tp_reseau]
     },
     {
         name: "Gérer",
@@ -60,7 +60,7 @@ const competences = [
     {
         name: "Conduire",
         description: "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs",
-        projects: [projects.petit_creation]
+        projects: [projects.site_vieux, projects.petit_creation]
     },
     {
         name: "Collaborer",
@@ -110,7 +110,9 @@ export const HomePage = () => {
                                     plusieurs projets web avec des équipes. N'hésitez pas à me contacter.
                                 </p>
                             </div>
-                            <button className="btn btn-primary background-blue fw-bold" onClick={()=>scrollToSection("contact")}>Contact</button>
+                            <button className="btn btn-primary background-blue fw-bold"
+                                    onClick={() => scrollToSection("contact")}>Contact
+                            </button>
                         </div>
                         <img className="img-fluid rounded h-auto mx-3 img-presentation"
                              src={`${import.meta.env.BASE_URL}images/photo_profil.jpg`}
