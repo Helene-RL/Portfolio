@@ -20,7 +20,7 @@ type TimelineData = {
 export const Timeline = (props: { name: string, elements: TimelineData[] }) => {
     return (
         <div className="container-fluid d-flex flex-column fw-semibold">
-            <h4 className="">{props.name}</h4>
+            <h4>{props.name}</h4>
             {props.elements.map((item: TimelineData) => (
                 <Element_Timeline
                     key={item.name}

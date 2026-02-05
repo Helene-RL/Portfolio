@@ -8,7 +8,7 @@ export const ProjectCard = (props: { id: string, annee: string, title: string, i
                 {props.annee}
             </div>
             <img src={`${import.meta.env.BASE_URL}projects/${props.img}`} className="card-img-top"
-                 alt="Projet lié à Développement Web"/>
+                 alt={`Projet ${props.title}`}/>
             <div className="card-body text-center">
                 <h5 className="card-title">{props.title}</h5>
                 <p className="card-text">{props.description}</p>
