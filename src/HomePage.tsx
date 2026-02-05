@@ -45,7 +45,7 @@ const competences = [
     {
         name: "Optimiser",
         description: "Sélectionner les algorithmes adéquats pour répondre à un problème donné",
-        projects: [projects.travia, projects.qix_optimisation]
+        projects: [projects.codexnaturalis, projects.travia, projects.qix_optimisation]
     },
     {
         name: "Administrer",
@@ -65,7 +65,7 @@ const competences = [
     {
         name: "Collaborer",
         description: "Situer son rôle et ses missions au sein d'une équipe informatique",
-        projects: [projects.unesco, projects.tchoutchou]
+        projects: [projects.unesco, projects.tchoutchou, projects.plurielle]
     }
 ];
 

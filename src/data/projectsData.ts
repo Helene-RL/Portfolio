@@ -93,6 +93,7 @@ export const projects: Record<string, Project> = {
         url: "http://atout-accessibilite.fr/doudous/index.php",
         faitAvec: ["Julie Leroy"],
     },
+
     tchoutchou: {
         id: "tchoutchou",
         title: "Tchou-Tchou (Terminé)",
@@ -107,6 +108,28 @@ export const projects: Record<string, Project> = {
         image: "tchou-tchou.png",
         faitAvec: ["Damien Tremerie", "Romain Loncin", "Benjamin Rissot"],
     },
+
+    codexnaturalis: {
+        id: "codexnaturalis",
+        title: "Codex Naturalis (Terminé)",
+        year: "BUT 1",
+        description_card:
+            "Developpement d'un jeu de société: le Codex Naturalis",
+        description:
+            "Projet universitaire consistant à développer une adaptation numérique du jeu de cartes Codex Naturalis. Le jeu respecte les règles officielles et propose une interface permettant à plusieurs joueurs de s'affronter. Le projet met l'accent sur la logique de jeu, la gestion des cartes, le calcul des scores et la structuration du code.",
+        context: "Projet réalisé dans le cadre de la première année de BUT Informatique.Travail effectué en binôme avec pour objectif de mettre en pratique les bases de la programmation orientée objet.",
+        objectives: [
+            "Analyser et comprendre les règles d’un jeu de société existant",
+            "Modéliser les entités du jeu (cartes, joueurs, plateau, score)",
+            "Implémenter la logique complète du jeu en Java",
+            "Appliquer les principes de la programmation orientée objet",
+            "Travailler en collaboration sur un projet informatique"
+        ],
+        technos: ["Java"],
+        image: "codexnaturalis.png",
+        faitAvec: ["Charlie Janvier"],
+    },
+
     unesco: {
         id: "unesco",
         title: "Project Alger(UNESCO) (Terminé)",
@@ -121,6 +144,7 @@ export const projects: Record<string, Project> = {
         image: "Site_Alger.png",
         faitAvec: ["Martial Carceles", "Loïc Rakotoniary", "Jules Renaud--Grange", "Daniel Dos Santos", "Khephren Djelidi"],
     },
+
     primeur_passion: {
         id: "primeur_passion",
         title: "Primeur Passion (Terminé)",
@@ -135,6 +159,7 @@ export const projects: Record<string, Project> = {
         image: "primeur_passion.png",
         faitAvec: ["Charly Janvier"],
     },
+
     qix: {
         id: "qix",
         title: "Qix (Terminé)",
@@ -149,6 +174,7 @@ export const projects: Record<string, Project> = {
         image: "qix.png",
         faitAvec: ["Inès Benameur"],
     },
+
     sae_reseau: {
         id: "sae_reseau",
         title: "SAE réseau (Terminé)",
@@ -168,6 +194,7 @@ export const projects: Record<string, Project> = {
         image: "sae_reseau.png",
         faitAvec: ["Charly Janvier"],
     },
+
     site_vieux: {
         id: "site_vieux",
         title: "Ami d'Âge (Terminé)",
@@ -182,6 +209,7 @@ export const projects: Record<string, Project> = {
         image: "site_vieux.png",
         faitAvec: ["Charly Janvier", "Loïc Rakotoniary", "Yevhen Kefa"],
     },
+
     qix_optimisation: {
         id: "qix_optimisation",
         title: "Qix Optimisation(Terminé)",
@@ -200,5 +228,23 @@ export const projects: Record<string, Project> = {
         technos: ["Python"],
         image: "qix.png",
         faitAvec: ["Benjamin Rissot"],
+    },
+
+    plurielle: {
+        id: "plurielle",
+        title: "Pluri'elle (En cour)",
+        year: "BUT 3",
+        description_card:
+            "Creation d'un site d'aide à la gestion du recrutement pour l'entreprise Pluri'elle",
+        description:
+            "Le projet de digitalisation de Pluri'Elles a pour objectif d'optimiser ses processus internes et d'améliorer l'expérience des employés afin de renforcer leur engagement et leur productivité.",
+        context: "Projet universitaire réalisé en BUT Informatique, dans le cadre d’un travail d’optimisation et de qualité logicielle.",
+        objectives: [
+            "Optimiser le recrutement et réduire le turnover en intégrant une solution IA pour l'analyse et la sélection des candidats.",
+            "Fidéliser et former les employés via des outils numériques adaptés"
+        ],
+        technos: ["Python", "React", "PostgreSQL"],
+        image: "plurielle.png",
+        faitAvec: ["Damien Tremerie", "Romain Loncin", "Randy Bou Jaber", "Alexis Telle", "Julien Synaeve"],
     },
 };

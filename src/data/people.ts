@@ -11,5 +11,8 @@ export const people = {
     "Khephren Djelidi": "https://www.linkedin.com/in/khephrendjelidi/",
     "Charly Janvier": "https://www.linkedin.com/in/charly-janvier-219361269/",
     "Inès Benameur": "https://www.linkedin.com/in/inesbenameur13/",
-    "Yevhen Kefa": "https://www.linkedin.com/in/yevhen-kefa-3203a22a1/"
+    "Yevhen Kefa": "https://www.linkedin.com/in/yevhen-kefa-3203a22a1/",
+    "Randy Bou Jaber": "https://www.linkedin.com/in/randy-bou-jaber/",
+    "Alexis Telle": "https://www.linkedin.com/in/alexis-telle/",
+    "Julien Synaeve": "https://www.linkedin.com/in/julien-synaeve/",
 };
