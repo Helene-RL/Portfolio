@@ -156,6 +156,12 @@ img {
     background-color: #5fa1de
 }
 
+.card-portfolio .card-img-top {
+    max-height: 10em;          /* ajuste selon ton design */
+    object-fit: contain;       /* coupe l’image sans la déformer */
+    width: 100%;
+}
+
 /* =========================
    PAGE PROJET (SCOPED)
 ========================= */
