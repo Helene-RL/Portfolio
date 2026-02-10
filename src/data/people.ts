@@ -15,4 +15,5 @@ export const people = {
     "Randy Bou Jaber": "https://www.linkedin.com/in/randy-bou-jaber/",
     "Alexis Telle": "https://www.linkedin.com/in/alexis-telle/",
     "Julien Synaeve": "https://www.linkedin.com/in/julien-synaeve/",
+    "Jérémy Zheng": "https://www.linkedin.com/in/jeremy-zheng-jz/",
 };

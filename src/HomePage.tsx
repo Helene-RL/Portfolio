@@ -60,7 +60,7 @@ const competences = [
     {
         name: "Conduire",
         description: "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs",
-        projects: [projects.site_vieux, projects.petit_creation]
+        projects: [projects.site_vieux, projects.jenkins, projects.petit_creation]
     },
     {
         name: "Collaborer",
