@@ -9,19 +9,38 @@ export const Skill = (props: { label: string, img: string }) => {
     )
 }
 
+export const CategorySkill = (props: { category: string, skills: SkillsData[] }) => {
+    return (
+        <div className="border-blue rounded-5 m-1 shadow">
+            <h4 className="mb-3">{props.category}</h4>
+            <div className="container d-flex flex-wrap text-center justify-content-center align-items-center">
+                {props.skills.map((item: SkillsData) => (
+                    <Skill
+                        key={item.label}
+                        label={item.label}
+                        img={item.img}
+                    />
+                ))}
+            </div>
+        </div>
+    )
+}
+
 type SkillsData = {
     label: string;
     img: string;
 }
-export const Skills = (props: { tab_skills: SkillsData[] }) => {
+
+type SkillCategory = {
+    category: string;
+    skills: SkillsData[];
+};
+
+export const Skills = (props: { tab_skills: SkillCategory[] }) => {
     return (
-        <div className="d-flex flex-wrap text-center justify-content-center align-items-center">
-            {props.tab_skills.map((item: SkillsData) => (
-                <Skill
-                    key={item.label}
-                    label={item.label}
-                    img={item.img}
-                />
+        <div className="container-fluid d-flex flex-wrap justify-content-around">
+            {props.tab_skills.map((cat) => (
+                <CategorySkill key={cat.category} category={cat.category} skills={cat.skills}/>
             ))}
         </div>
     )

@@ -7,67 +7,9 @@ import {Competences} from "./composant/Competences";
 import {Form} from "./composant/Form";
 import {Footer} from "./composant/Footer";
 import {scrollToSection} from "./composant/Scroll";
-import {projects} from "./data/projectsData";
+import {FormationData, ExperienceData, SkillsData, competences} from "./data/homeData"
 import "./style.css"
 
-const FormationData = [
-    {date: "2023-2026", name: "BUT informatique", place: "IUT de Marne la Vallée - Champs-sur-Marne"},
-    {date: "2020-2023", name: "Baccalauréat général", place: "Lycée Arago - Paris"},
-    {date: "2016-2020", name: "Brevet", place: "Collège Robert Doisneau - Paris"}
-];
-
-const ExperienceData = [
-    {date: "2024-2026", name: "Alternance", place: "Caseware France - Paris"},
-    {date: "décembre 2019", name: "Stage", place: "CEA - Fontenay-aux-Roses"}
-]
-
-const SkillsData = [
-    {label: "HTML", img: "html.png"},
-    {label: "CSS", img: "css.png"},
-    {label: "JS", img: "js.png"},
-    {label: "PHP", img: "php.png"},
-    {label: "Python", img: "python.png"},
-    {label: "MySQL", img: "sql.png"},
-    {label: "PostGreSQL", img: "postgresql.png"},
-    {label: "C", img: "c.png"},
-    {label: "Java", img: "java.png"},
-    {label: "Figma", img: "figma-logo.svg"},
-    {label: "TypeScript", img: "typescript.png"},
-    {label: "React", img: "react.png"},
-]
-
-const competences = [
-    {
-        name: "Realiser",
-        description: "Partir des exigences et aller jusqu'à une application complète.",
-        projects: [projects.qix, projects.wikiadventure]
-    },
-    {
-        name: "Optimiser",
-        description: "Sélectionner les algorithmes adéquats pour répondre à un problème donné",
-        projects: [projects.codexnaturalis, projects.travia, projects.qix_optimisation]
-    },
-    {
-        name: "Administrer",
-        description: "Déployer des services dans une infrastructure réseau",
-        projects: [projects.sae_reseau, projects.tp_reseau]
-    },
-    {
-        name: "Gérer",
-        description: "Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité",
-        projects: [projects.primeur_passion, projects.easyfund]
-    },
-    {
-        name: "Conduire",
-        description: "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs",
-        projects: [projects.site_vieux, projects.jenkins, projects.petit_creation]
-    },
-    {
-        name: "Collaborer",
-        description: "Situer son rôle et ses missions au sein d'une équipe informatique",
-        projects: [projects.unesco, projects.tchoutchou, projects.plurielle]
-    }
-];
 
 const scrollToTop = () => {
     window.scrollTo({
@@ -89,7 +31,7 @@ export const HomePage = () => {
                 {/*accueil*/}
                 <Section id="accueil" name="Bienvenue sur mon portfolio" level={1}>
                     <a href={`${import.meta.env.BASE_URL}images/cv.pdf`} download="cv.pdf">
-                        <button type="button" className="btn btn-primary background-blue fw-bold">Télécharger mon cv
+                        <button className="btn btn-primary background-blue fw-bold">Télécharger mon cv
                         </button>
                     </a>
                 </Section>
@@ -114,7 +56,7 @@ export const HomePage = () => {
                                     onClick={() => scrollToSection("contact")}>Contact
                             </button>
                         </div>
-                        <img className="img-fluid rounded h-auto mx-3 img-presentation"
+                        <img loading="lazy" className="img-fluid rounded h-auto mx-3 img-presentation"
                              src={`${import.meta.env.BASE_URL}images/photo_profil.jpg`}
                              alt="ma photo"/>
                     </div>
@@ -135,9 +77,7 @@ export const HomePage = () => {
 
                 {/*compétences*/}
                 <Section id="competences" name="Compétences">
-                    <div className="container-fluid d-flex flex-wrap justify-content-around">
-                        <Competences competences={competences}/>
-                    </div>
+                    <Competences competences={competences}/>
                 </Section>
 
                 {/*contact*/}

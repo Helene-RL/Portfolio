@@ -58,6 +58,11 @@ img {
     background-color: var(--couleur-principale) !important;
 }
 
+.border-blue {
+    max-width: 48%;
+    border: 3px solid var(--couleur-principale) !important;
+}
+
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -157,8 +162,8 @@ img {
 }
 
 .card-portfolio .card-img-top {
-    max-height: 10em;          /* ajuste selon ton design */
-    object-fit: contain;       /* coupe l’image sans la déformer */
+    max-height: 10em; /* ajuste selon ton design */
+    object-fit: contain; /* coupe l’image sans la déformer */
     width: 100%;
 }
 
