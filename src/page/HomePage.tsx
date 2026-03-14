@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "./composant/Navbar";
-import {Section} from "./composant/Section";
-import {Timeline} from "./composant/Timeline";
-import {Skills} from "./composant/Skills";
-import {Competences} from "./composant/Competences";
-import {Form} from "./composant/Form";
-import {Footer} from "./composant/Footer";
-import {scrollToSection} from "./composant/Scroll";
-import {FormationData, ExperienceData, SkillsData, competences} from "./data/homeData"
-import "./style.css"
+import Navbar from "../composant/Navbar";
+import {Section} from "../composant/Section";
+import {Timeline} from "../composant/Timeline";
+import {Skills} from "../composant/Skills";
+import {Competences} from "../composant/Competences";
+import {Form} from "../composant/Form";
+import {Footer} from "../composant/Footer";
+import {scrollToSection} from "../composant/Scroll";
+import {FormationData, ExperienceData, SkillsData, competences} from "../data/homeData"
+import "../style.css"
 
 
 const scrollToTop = () => {
@@ -93,5 +93,5 @@ export const HomePage = () => {
             {/*footer*/}
             <Footer/>
         </>
-    )
+)
 }

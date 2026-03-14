@@ -35,13 +35,16 @@ export const SkillsData = [
         category: "Bases de données",
         skills: [
             { label: "MySQL", img: "sql.png" },
-            { label: "PostgreSQL", img: "postgresql.png" }
+            { label: "PostgreSQL", img: "postgresql.png" },
+            { label: "MongoDB", img: "mongoDB.png" }
         ]
     },
     {
         category: "Outils & design",
         skills: [
-            { label: "Figma", img: "figma-logo.svg" }
+            { label: "Figma", img: "figma.png" },
+            { label: "Github", img: "github.png" },
+            { label: "Bootstrap", img: "bootstrap.png" }
         ]
     },
 ]

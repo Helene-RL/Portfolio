@@ -35,9 +35,9 @@ img {
 }
 
 .img-competence {
-    max-width: 7rem;
+    max-width: 5rem;
     margin: 0 1rem;
-    min-width: 7em;
+    min-width: 5em;
 }
 
 .img-project {
@@ -58,9 +58,8 @@ img {
     background-color: var(--couleur-principale) !important;
 }
 
-.border-blue {
+.category-skill {
     max-width: 48%;
-    border: 3px solid var(--couleur-principale) !important;
 }
 
 .scroll-to-top {

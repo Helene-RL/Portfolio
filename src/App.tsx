@@ -1,6 +1,6 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import {HomePage} from "./HomePage";
-import ProjectPage from "./ProjectPage";
+import {HomePage} from "./page/HomePage";
+import ProjectPage from "./page/ProjectPage";
 import React from "react";
 
 function App() {

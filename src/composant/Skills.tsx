@@ -11,7 +11,7 @@ export const Skill = (props: { label: string, img: string }) => {
 
 export const CategorySkill = (props: { category: string, skills: SkillsData[] }) => {
     return (
-        <div className="border-blue rounded-5 m-1 shadow">
+        <div className="border border-dark rounded-5 my-2 mx-1 shadow p-1 category-skill">
             <h4 className="mb-3">{props.category}</h4>
             <div className="container d-flex flex-wrap text-center justify-content-center align-items-center">
                 {props.skills.map((item: SkillsData) => (
