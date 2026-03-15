@@ -23,7 +23,7 @@ export const CompetenceCard = (props: {
                 <p className="card-text text-center">{props.description}</p>
             </div>
             <div className={`collapse ${open ? "show" : ""}`} id={`${collapseId}`}>
-                <div className="card-body d-flex justify-content-center">
+                <div className="card-body d-flex flex-wrap justify-content-center">
                     {props.list_projectCard.map((project: Project) => (
                         <ProjectCard key={project.id} id={project.id} annee={project.year} title={project.title}
                                      img={project.image}

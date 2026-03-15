@@ -105,13 +105,13 @@ img {
     .card .collapse.show {
         width: 100% !important; /* s'assurer que la carte prend toute la largeur sur les petits écrans */
     }
+
+    .category-skill {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 30em) {
-    img {
-        max-width: 5rem;
-    }
-
     .img-competence {
         max-width: 5rem;
     }

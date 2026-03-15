@@ -59,7 +59,7 @@ export const competences = [
     {
         name: "Realiser",
         description: "Partir des exigences et aller jusqu'à une application complète.",
-        projects: [projects.qix, projects.wikiadventure]
+        projects: [projects.qix, projects.wikiadventure, projects.plurielle]
     },
     {
         name: "Optimiser",
@@ -79,11 +79,11 @@ export const competences = [
     {
         name: "Conduire",
         description: "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs",
-        projects: [projects.site_vieux, projects.jenkins, projects.petit_creation]
+        projects: [projects.site_vieux, projects.petit_creation]
     },
     {
         name: "Collaborer",
         description: "Situer son rôle et ses missions au sein d'une équipe informatique",
-        projects: [projects.unesco, projects.tchoutchou, projects.plurielle]
+        projects: [projects.unesco, projects.tchoutchou, projects.jenkins ]
     }
 ];
