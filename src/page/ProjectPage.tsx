@@ -39,10 +39,10 @@ const ProjectPage = () => {
                 </div>
 
                 <ProjectSection>
-                    <ProjectElement element={project.image} class="d-flex justify-content-center">
+                    <ProjectElement element={project.image} className="d-flex justify-content-center">
                         <img src={`${import.meta.env.BASE_URL}projects/${project.image}`}
                              alt={project.title}
-                             className="img-fluid rounded border border-2" style={{ maxHeight: "25em" }} />
+                             className="img-fluid rounded border border-2" style={{maxHeight: "25em"}}/>
                     </ProjectElement>
 
                     <ProjectElement element={project.description}>
@@ -51,11 +51,7 @@ const ProjectPage = () => {
                 </ProjectSection>
 
                 <ProjectSection>
-                    <ProjectElement title="Contexte" element={project.context}>
-                        <p>{project.context}</p>
-                    </ProjectElement>
-
-                    <ProjectElement title="Objectifs" element={project.objectives}>
+                    <ProjectElement title="Objectifs" element={project.objectives} width50={false}>
                         <div className="row">
                             {project.objectives.map((objective: string, index: number) => (
                                 <div key={index} className="col-md-4 mb-3 h3">
@@ -74,10 +70,14 @@ const ProjectPage = () => {
                 <ProjectSection>
                     <ProjectElement title="Fait avec" element={project.faitAvec}>
                         <ul className="list-unstyled">
-                            {project.faitAvec.map((person: string, index: number) => (
-                                <li key={index}>• <a href={people[person]} target="_blank" rel="noopener noreferrer"
-                                                     className="lien-projet">{person}</a></li>
-                            ))}
+                            {project.faitAvec.map((personId: string) => {
+                                const person = people[personId];
+                                return (
+                                    <li key={personId}>• <a href={person.url} target="_blank"
+                                                          rel="noopener noreferrer"
+                                                          className="lien-projet">{person.name}</a></li>
+                                )
+                            })}
                         </ul>
                     </ProjectElement>
 
