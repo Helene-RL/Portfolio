@@ -19,7 +19,8 @@ export const SkillsData = [
             { label: "CSS", img: "css.png"},
             { label: "JavaScript", img: "js.png"},
             { label: "TypeScript", img: "typescript.png" },
-            { label: "React", img: "react.png" }
+            { label: "React", img: "react.png" },
+            { label: "Bootstrap", img: "bootstrap.png" },
         ]
     },
     {
@@ -28,23 +29,28 @@ export const SkillsData = [
             { label: "PHP", img: "php.png"},
             { label: "Python", img: "python.png"},
             { label: "Java", img: "java.png"},
-            { label: "C", img: "c.png"}
+            { label: "C", img: "c.png"},
         ]
     },
     {
         category: "Bases de données",
         skills: [
-            { label: "MySQL", img: "sql.png" },
+            { label: "MySQL", img: "mysql.png" },
             { label: "PostgreSQL", img: "postgresql.png" },
-            { label: "MongoDB", img: "mongoDB.png" }
+            { label: "MongoDB", img: "mongodb.png" }
         ]
     },
     {
-        category: "Outils & design",
+        category: "Outils & Workflow",
         skills: [
-            { label: "Figma", img: "figma.png" },
+            { label: "Git", img: "git.png" },
             { label: "Github", img: "github.png" },
-            { label: "Bootstrap", img: "bootstrap.png" }
+            { label: "Postman", img: "postman.png" },
+            { label: "VS Code", img: "vscode.png" },
+            { label: "JetBrains", img: "jetbrains.png" },
+            { label: "Docker", img: "docker.png" },
+            { label: "Jenkins", img: "jenkins.png" },
+            { label: "Figma", img: "figma.png" }
         ]
     },
 ]
