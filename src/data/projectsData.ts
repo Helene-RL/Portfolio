@@ -9,7 +9,7 @@ export type Project = {
     technos: string[];
     image: string;
     url?: string;
-    faitAvec?: string[];
+    faitAvec: string[];
 };
 
 export const projects: Record<string, Project> = {

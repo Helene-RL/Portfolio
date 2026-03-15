@@ -2,7 +2,6 @@ import React from "react";
 import {useParams, useNavigate, Link} from "react-router-dom";
 import {projects} from "../data/projectsData";
 import {people} from "../data/people";
-import {scrollToSection} from "../composant/Scroll";
 import {ProjectSection} from "../composant/ProjectSection";
 import {ProjectElement} from "../composant/ProjectElement";
 

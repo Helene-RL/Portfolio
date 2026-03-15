@@ -9,6 +9,7 @@ import {Footer} from "../composant/Footer";
 import {scrollToSection} from "../composant/Scroll";
 import {FormationData, ExperienceData, SkillsData, competences} from "../data/homeData"
 import "../style.css"
+import {Presentation} from "../composant/Presentation";
 
 
 const scrollToTop = () => {
@@ -39,23 +40,7 @@ export const HomePage = () => {
                 {/*presentation*/}
                 <Section id="presentation" name="Présentation">
                     <div className="container-fluid d-flex justify-content-center align-items-center pt-3">
-                        <div className="presentation">
-                            <h3 className="pb-3">Apprendre à me connaître !</h3>
-                            <div className="text-start">
-                                <p>Bonjour! Je m'appelle <strong>Hélène Ralu--Leroy</strong> et je suis <strong>étudiante
-                                    en 3<sup>ème</sup> année de BUT informatique </strong> à l'IUT de Marne la Vallée.
-                                </p>
-                                <p>Je suis actuellement un contrat d'alternance Caseware France.
-                                </p>
-                                <p>Je suis curieuse et ouverte d'esprit, j'aime travailler sur des problématiques
-                                    variées. J'aime bien coder et découvrir de nouvelles choses. J'ai déjà réalisé
-                                    plusieurs projets web avec des équipes. N'hésitez pas à me contacter.
-                                </p>
-                            </div>
-                            <button className="btn btn-primary background-blue fw-bold"
-                                    onClick={() => scrollToSection("contact")}>Contact
-                            </button>
-                        </div>
+                        <Presentation/>
                         <img loading="lazy" className="img-fluid rounded h-auto mx-3 img-presentation"
                              src={`${import.meta.env.BASE_URL}images/photo_profil.jpg`}
                              alt="ma photo"/>
@@ -93,5 +78,5 @@ export const HomePage = () => {
             {/*footer*/}
             <Footer/>
         </>
-)
+    )
 }
