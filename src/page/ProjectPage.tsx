@@ -1,5 +1,5 @@
 import React from "react";
-import {useParams, useNavigate, Link} from "react-router-dom";
+import {useParams, useNavigate} from "react-router-dom";
 import {projects} from "../data/projectsData";
 import {people} from "../data/people";
 import {ProjectSection} from "../composant/ProjectSection";
