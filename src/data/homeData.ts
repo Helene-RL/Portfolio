@@ -58,12 +58,12 @@ export const SkillsData = [
 export const competences = [
     {
         name: "Realiser",
-        description: "Partir des exigences et aller jusqu'à une application complète.",
+        description: "Adapter des applications sur un ensemble de supports",
         projects: [projects.qix, projects.wikiadventure, projects.plurielle]
     },
     {
         name: "Optimiser",
-        description: "Sélectionner les algorithmes adéquats pour répondre à un problème donné",
+        description: "Analyser et optimiser des applications",
         projects: [projects.codexnaturalis, projects.travia, projects.qix_optimisation]
     },
     {
@@ -83,7 +83,7 @@ export const competences = [
     },
     {
         name: "Collaborer",
-        description: "Situer son rôle et ses missions au sein d'une équipe informatique",
+        description: "Manager une équipe informatique",
         projects: [projects.unesco, projects.tchoutchou, projects.jenkins ]
     }
 ];

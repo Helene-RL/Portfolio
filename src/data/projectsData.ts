@@ -253,7 +253,7 @@ export const projects: Record<string, Project> = {
 
     qix_optimisation: {
         id: "qix_optimisation",
-        title: "Qix Optimisation(Terminé)",
+        title: "Qix Optimisation (Terminé)",
         year: "BUT 3",
         description_card:
             "Optimisation du code d'un project de 1er année: Qix.",
@@ -272,17 +272,20 @@ export const projects: Record<string, Project> = {
 
     plurielle: {
         id: "plurielle",
-        title: "Pluri'elle (En cour)",
+        title: "Pluri'elle (En cours)",
         year: "BUT 3",
         description_card:
             "Creation d'un site d'aide à la gestion du recrutement pour l'entreprise Pluri'elle",
         description:
-            "Le projet de digitalisation de Pluri'Elles a pour objectif d'optimiser ses processus internes et d'améliorer l'expérience des employés afin de renforcer leur engagement et leur productivité.",
+            "L’objectif de ce projet est de concevoir deux applications web pour répondre aux besoins de l’entreprise Pluri’Elles. La première application vise à faciliter la gestion du recrutement en permettant au service des ressources humaines de centraliser et d’analyser les candidatures plus efficacement. La seconde est un module d’e-learning destiné aux employés, leur permettant d’accéder à différentes formations. Ce module intègre également une solution utilisant la réalité virtuelle (VR) afin de proposer des expériences de formation immersives.\n",
         objectives: [
-            "Optimiser le recrutement et réduire le turnover en intégrant une solution IA pour l'analyse et la sélection des candidats.",
-            "Fidéliser et former les employés via des outils numériques adaptés"
+            "Concevoir une application web full-stack pour la gestion du recrutement",
+            "Développer une API backend avec Python et FastAPI",
+            "Mettre en place une architecture moderne avec Next.js et React",
+            "Gérer les données et les utilisateurs avec PostgreSQL",
+            "Déployer et automatiser le projet avec Docker et GitLab CI/CD"
         ],
-        technos: ["Python", "React", "PostgreSQL"],
+        technos: ["Next.js","Python","FastAPI", "React", "TypeScript", "PostgreSQL","Docker","GitLab CI/CD",],
         image: "plurielle.png",
         faitAvec: ["damienTremerie", "romainLoncin", "randyBouJaber", "alexisTelle", "julienSynaeve"],
     },
@@ -302,7 +305,7 @@ export const projects: Record<string, Project> = {
             "Gérer le code et les versions via GitHub",
             "Appliquer les bonnes pratiques de qualité web et de développement"
         ],
-        technos: ["C", "Jenkins", "Docker", "Github"],
+        technos: ["C", "Jenkins", "Docker", "Github", "CI/CD"],
         image: "jenkins.png",
         faitAvec: ["damienTremerie", "romainLoncin", "emilieXu", "jeremyZheng"],
     },
