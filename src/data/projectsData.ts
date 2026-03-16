@@ -209,6 +209,7 @@ export const projects: Record<string, Project> = {
         ],
         technos: ["Python"],
         image: "qix.png",
+        url: "https://replit.com/@heleneraluleroy/Qix",
         faitAvec: ["inesBenameur"],
     },
 
@@ -267,6 +268,7 @@ export const projects: Record<string, Project> = {
         ],
         technos: ["Python"],
         image: "qix.png",
+        url: "https://replit.com/@heleneraluleroy/Qix",
         faitAvec: ["benjaminRissot"],
     },
 
@@ -277,7 +279,7 @@ export const projects: Record<string, Project> = {
         description_card:
             "Creation d'un site d'aide à la gestion du recrutement pour l'entreprise Pluri'elle",
         description:
-            "L’objectif de ce projet est de concevoir deux applications web pour répondre aux besoins de l’entreprise Pluri’Elles. La première application vise à faciliter la gestion du recrutement en permettant au service des ressources humaines de centraliser et d’analyser les candidatures plus efficacement. La seconde est un module d’e-learning destiné aux employés, leur permettant d’accéder à différentes formations. Ce module intègre également une solution utilisant la réalité virtuelle (VR) afin de proposer des expériences de formation immersives.\n",
+            "L’objectif de ce projet est de concevoir deux applications web pour répondre aux besoins de l’entreprise Pluri’Elles. La première application vise à faciliter la gestion du recrutement en permettant au service des ressources humaines de centraliser et d’analyser les candidatures plus efficacement. La seconde est un module d’e-learning destiné aux employés, leur permettant d’accéder à différentes formations. Ce module intègre également une solution utilisant la réalité virtuelle (VR) afin de proposer des expériences de formation immersives.",
         objectives: [
             "Concevoir une application web full-stack pour la gestion du recrutement",
             "Développer une API backend avec Python et FastAPI",
@@ -285,7 +287,7 @@ export const projects: Record<string, Project> = {
             "Gérer les données et les utilisateurs avec PostgreSQL",
             "Déployer et automatiser le projet avec Docker et GitLab CI/CD"
         ],
-        technos: ["Next.js","Python","FastAPI", "React", "TypeScript", "PostgreSQL","Docker","GitLab CI/CD",],
+        technos: ["Next.js", "Python", "FastAPI", "React", "TypeScript", "PostgreSQL", "Docker", "GitLab CI/CD",],
         image: "plurielle.png",
         faitAvec: ["damienTremerie", "romainLoncin", "randyBouJaber", "alexisTelle", "julienSynaeve"],
     },

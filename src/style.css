@@ -145,6 +145,7 @@ img {
     border: 1px solid var(--couleur-principale);
     color: white;
     transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
 .card-portfolio:hover {

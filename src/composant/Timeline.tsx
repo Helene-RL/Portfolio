@@ -3,7 +3,7 @@ import React from "react";
 
 export const Element_Timeline = (props: { date: string, name: string, place: string }) => {
     return (
-        <div className="bg-primary m-2 p-1 rounded-4 text-white background-blue">
+        <div className="bg-primary m-2 p-2 rounded-4 text-white background-blue">
             <span>{props.date}</span><br/>
             <span>{props.name}</span><br/>
             {props.place}

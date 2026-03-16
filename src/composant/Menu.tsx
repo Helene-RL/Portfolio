@@ -9,7 +9,7 @@ export const NavItem = (props: { label: string, anchor: string }) => {
         <li className="nav-item">
             <button
                 onClick={handleClick}
-                className="nav-link btn btn-link">{props.label}</button>
+                className="nav-link btn btn-link text-white">{props.label}</button>
         </li>
     )
 }

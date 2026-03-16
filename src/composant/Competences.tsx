@@ -11,9 +11,9 @@ export const CompetenceCard = (props: {
 
     const [open, setOpen] = useState(false);
     return (
-        <div className="card card-portfolio my-3" style={{
-            flex: open ? "0 0 100%" : "0 0 18rem",
-            maxWidth: open ? "100%" : "18rem",
+        <div className="card card-portfolio my-3 mx-2 cursor-pointer" style={{
+            flex: open ? "0 0 80%" : "0 0 18rem",
+            maxWidth: open ? "80%" : "18rem",
         }}>
             <div className="card-body" data-bs-toggle="collapse" data-bs-target={`#${collapseId}`}
                  aria-expanded="false" aria-controls={`#${collapseId}`} onClick={() => setOpen(!open)}>
@@ -43,7 +43,7 @@ type CompetencesData = {
 
 export const Competences = (props: { competences: CompetencesData[] }) => {
     return (
-        <div className="container-fluid d-flex flex-wrap justify-content-around">
+        <div className="container-fluid d-flex flex-wrap justify-content-center">
             {props.competences.map((item) => (
                 <CompetenceCard key={item.name} name={item.name} description={item.description}
                                 list_projectCard={item.projects}/>
