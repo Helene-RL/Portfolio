@@ -40,9 +40,22 @@ const ProjectPage = () => {
 
                 <ProjectSection>
                     <ProjectElement element={project.image} className="d-flex justify-content-center">
-                        <img src={`${import.meta.env.BASE_URL}projects/${project.image}`}
-                             alt={project.title}
-                             className="img-fluid rounded border border-2" style={{maxHeight: "25em"}}/>
+                        {(() => {
+                            const image = (
+                                <img
+                                    src={`${import.meta.env.BASE_URL}projects/${project.image}`}
+                                    alt={project.title}
+                                    className="img-fluid rounded border border-2"
+                                    style={{ maxHeight: "25em" }}
+                                />
+                            );
+
+                            return project.url ? (
+                                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                                    {image}
+                                </a>
+                            ) : image;
+                        })()}
                     </ProjectElement>
 
                     <ProjectElement element={project.description}>
@@ -52,10 +65,10 @@ const ProjectPage = () => {
 
                 <ProjectSection>
                     <ProjectElement title="Objectifs" element={project.objectives} width50={false}>
-                        <div className="row">
+                        <div className="row w-auto">
                             {project.objectives.map((objective: string, index: number) => (
                                 <div key={index} className="col-md-4 mb-3 h3">
-                                    <div className="card border-0 shadow-sm h-100">
+                                    <div className="card border-0 shadow-sm">
                                         <div className="card-body text-center">
                                             {objective}
                                         </div>

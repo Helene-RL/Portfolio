@@ -108,7 +108,7 @@ export const projects: Record<string, Project> = {
         ],
         technos: ["PHP", "HTML", "CSS", "JS", "BDD"],
         image: "petit_creation.png",
-        url: "http://atout-accessibilite.fr/doudous/index.php",
+        url: "https://atout-accessibilite.fr/doudous/index.php",
         faitAvec: ["julieLeroy"],
     },
 

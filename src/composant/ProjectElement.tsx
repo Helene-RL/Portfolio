@@ -9,7 +9,7 @@ export const ProjectElement = ({title, element, className, width50 = true, child
 }) => {
     if (!element || (Array.isArray(element) && element.length == 0)) return null;
     return (
-        <div className={`${width50 ? "w-50" : ""} ${className} pe-1`}>
+        <div className={`${width50 ? "w-100 w-md-50" : "w-100"} ${className} pe-1`}>
             {title && <h3 className="mb-3 h3">
                 {title}
             </h3>}
