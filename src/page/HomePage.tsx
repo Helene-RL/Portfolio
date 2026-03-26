@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../composant/Navbar";
 import {Section} from "../composant/Section";
 import {Timeline} from "../composant/Timeline";
-import {CategorySkill, Skills, SoftSkillCard} from "../composant/Skills";
+import {Skills, SoftSkillCard} from "../composant/Skills";
 import {Competences} from "../composant/Competences";
 import {Form} from "../composant/Form";
 import {Footer} from "../composant/Footer";
