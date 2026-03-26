@@ -26,15 +26,19 @@ export const HomePage = () => {
                  data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%"
                  data-bs-smooth-scroll="true" tabIndex={0}>
 
-                {sections.map((section) => (
-                    <Section
-                        key={section.id}
-                        id={section.id}
-                        name={section.title}
-                    >
-                        {sectionContent[section.id]}
-                    </Section>
-                ))}
+                {sections.map((section) => {
+                    const contentSection = sectionContent[section.id]
+                    return (
+                        <Section
+                            key={section.id}
+                            id={section.id}
+                            name={section.title}
+                            className={contentSection.className}
+                        >
+                            {contentSection.content}
+                        </Section>
+                    )
+                })}
 
                 <div className="scroll-to-top background-blue" onClick={scrollToTop}>
                     <span>&uarr;</span>

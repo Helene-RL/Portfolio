@@ -34,20 +34,3 @@ export const CompetenceCard = (props: {
         </div>
     )
 }
-
-type CompetencesData = {
-    name: string;
-    description: string;
-    projects: Project[];
-}
-
-export const Competences = (props: { competences: CompetencesData[] }) => {
-    return (
-        <div className="container-fluid d-flex flex-wrap justify-content-center">
-            {props.competences.map((item) => (
-                <CompetenceCard key={item.name} name={item.name} description={item.description}
-                                list_projectCard={item.projects}/>
-            ))}
-        </div>
-    )
-}
