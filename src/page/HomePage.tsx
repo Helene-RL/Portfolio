@@ -14,7 +14,7 @@ const scrollToTop = () => {
     });
 }
 
-const HomePage = () => {
+export const HomePage = () => {
     return (
         <>
             {/*header*/}
@@ -45,4 +45,3 @@ const HomePage = () => {
         </>
     )
 }
-export default HomePage
