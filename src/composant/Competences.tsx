@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {ProjectCard} from "./ProjectCard";
+import {ProjectCard} from "./Project/ProjectCard";
 import {Project} from "../data/projectsData";
 
 export const CompetenceCard = (props: {

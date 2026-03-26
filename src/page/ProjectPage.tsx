@@ -2,8 +2,8 @@ import React from "react";
 import {useParams, useNavigate} from "react-router-dom";
 import {projects} from "../data/projectsData";
 import {people} from "../data/people";
-import {ProjectSection} from "../composant/ProjectSection";
-import {ProjectElement} from "../composant/ProjectElement";
+import {ProjectSection} from "../composant/Project/ProjectSection";
+import {ProjectElement} from "../composant/Project/ProjectElement";
 
 const ProjectPage = () => {
     const {projectKey} = useParams();
