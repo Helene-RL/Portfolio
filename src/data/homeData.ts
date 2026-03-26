@@ -1,14 +1,43 @@
 import {projects} from "./projectsData";
 
-export const navElements = [
-    {label: "Accueil", anchor: "accueil"},
-    {label: "Présentation", anchor: "presentation"},
-    {label: "Résumé", anchor: "resume"},
-    {label: "Hard skills", anchor: "hard_skills"},
-    {label: "Soft skills", anchor: "soft_skills"},
-    {label: "Compétences", anchor: "competences"},
-    {label: "Contact", anchor: "contact"}
-]
+export const sections = [
+    {
+        id: "accueil",
+        navLabel: "Accueil",
+        title: "Bienvenue sur mon portfolio",
+        level: 1,
+    },
+    {
+        id: "presentation",
+        navLabel: "Présentation",
+        title: "Présentation",
+    },
+    {
+        id: "resume",
+        navLabel: "Résumé",
+        title: "Résumé",
+    },
+    {
+        id: "hard_skills",
+        navLabel: "Hard skills",
+        title: "Hard Skills",
+    },
+    {
+        id: "soft_skills",
+        navLabel: "Soft skills",
+        title: "Soft Skills",
+    },
+    {
+        id: "competences",
+        navLabel: "Compétences",
+        title: "Compétences",
+    },
+    {
+        id: "contact",
+        navLabel: "Contact",
+        title: "Contact",
+    }
+];
 
 export const FormationData = [
     {date: "2023-2026", name: "BUT informatique", place: "IUT de Marne la Vallée - Champs-sur-Marne"},
@@ -22,7 +51,7 @@ export const ExperienceData = [
 ]
 
 export const SkillsData = {
-    hard_skills : [
+    hard_skills: [
         {
             category: "Frontend",
             skills: [
@@ -65,7 +94,7 @@ export const SkillsData = {
             ]
         },
     ],
-    soft_skills : [
+    soft_skills: [
         {
             icon: "🤝",
             title: "Travail en équipe",

@@ -1,4 +1,3 @@
-
 import React, {ReactNode} from "react";
 
 export const Section = ({id, name, level = 2, children}: {

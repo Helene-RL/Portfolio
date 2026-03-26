@@ -15,8 +15,10 @@ export const NavItem = (props: { label: string, anchor: string }) => {
 }
 
 type NavItemData = {
-    label: string;
-    anchor: string;
+    navLabel: string;
+    id: string;
+    title: string;
+    level?: number | undefined;
 }
 export const Menu = (props: { element_nav: NavItemData[] }) => {
     return (
@@ -24,9 +26,9 @@ export const Menu = (props: { element_nav: NavItemData[] }) => {
             <ul className="navbar-nav ms-auto">
                 {props.element_nav.map((item: NavItemData) => (
                     <NavItem
-                        key={item.anchor}
-                        label={item.label}
-                        anchor={item.anchor}
+                        key={item.id}
+                        label={item.navLabel}
+                        anchor={item.id}
                     />
                 ))}
             </ul>

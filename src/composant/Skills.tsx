@@ -3,7 +3,7 @@ import React from "react"
 
 export const SoftSkillCard = (props: { icon: any, title: string, description: string }) => {
     return (
-            <div className="card shadow-sm border-1 rounded-3 mb-3">
+            <div className="card shadow-sm border-dark border-1 rounded-3 mb-3">
                 <div className="card-body d-flex">
                     <div className="pe-1">{props.icon}</div>
                     <h5 className="card-title fw-semibold color-blue">{props.title}</h5>

@@ -1,7 +1,7 @@
 import React from "react"
 import {Menu} from "./Menu";
 import {scrollToSection} from "./Scroll";
-import {navElements} from "../data/homeData"
+import {sections} from "../data/homeData"
 
 export const Navbar = () => {
     return (
@@ -34,7 +34,7 @@ export const Navbar = () => {
                 </button>
 
                 {/* Menu */}
-                <Menu element_nav={navElements}/>
+                <Menu element_nav={sections}/>
             </div>
         </nav>
     );
