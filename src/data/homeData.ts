@@ -1,5 +1,15 @@
 import {projects} from "./projectsData";
 
+export const navElements = [
+    {label: "Accueil", anchor: "accueil"},
+    {label: "Présentation", anchor: "presentation"},
+    {label: "Résumé", anchor: "resume"},
+    {label: "Hard skills", anchor: "hard_skills"},
+    {label: "Soft skills", anchor: "soft_skills"},
+    {label: "Compétences", anchor: "competences"},
+    {label: "Contact", anchor: "contact"}
+]
+
 export const FormationData = [
     {date: "2023-2026", name: "BUT informatique", place: "IUT de Marne la Vallée - Champs-sur-Marne"},
     {date: "2020-2023", name: "Baccalauréat général", place: "Lycée Arago - Paris"},
@@ -11,49 +21,78 @@ export const ExperienceData = [
     {date: "décembre 2019", name: "Stage", place: "CEA - Fontenay-aux-Roses"}
 ]
 
-export const SkillsData = [
-    {
-        category: "Frontend",
-        skills: [
-            { label: "HTML", img: "html.png" },
-            { label: "CSS", img: "css.png"},
-            { label: "JavaScript", img: "js.png"},
-            { label: "TypeScript", img: "typescript.png" },
-            { label: "React", img: "react.png" },
-            { label: "Bootstrap", img: "bootstrap.png" },
-        ]
-    },
-    {
-        category: "Backend",
-        skills: [
-            { label: "PHP", img: "php.png"},
-            { label: "Python", img: "python.png"},
-            { label: "Java", img: "java.png"},
-            { label: "C", img: "c.png"},
-        ]
-    },
-    {
-        category: "Bases de données",
-        skills: [
-            { label: "MySQL", img: "mysql.png" },
-            { label: "PostgreSQL", img: "postgresql.png" },
-            { label: "MongoDB", img: "mongodb.png" }
-        ]
-    },
-    {
-        category: "Outils & Workflow",
-        skills: [
-            { label: "Git", img: "git.png" },
-            { label: "Github", img: "github.png" },
-            { label: "Postman", img: "postman.png" },
-            { label: "VS Code", img: "vscode.png" },
-            { label: "JetBrains", img: "jetbrains.png" },
-            { label: "Docker", img: "docker.png" },
-            { label: "Jenkins", img: "jenkins.png" },
-            { label: "Figma", img: "figma.png" }
-        ]
-    },
-]
+export const SkillsData = {
+    hard_skills : [
+        {
+            category: "Frontend",
+            skills: [
+                {label: "HTML", img: "html.png"},
+                {label: "CSS", img: "css.png"},
+                {label: "JavaScript", img: "js.png"},
+                {label: "TypeScript", img: "typescript.png"},
+                {label: "React", img: "react.png"},
+                {label: "Bootstrap", img: "bootstrap.png"},
+            ]
+        },
+        {
+            category: "Backend",
+            skills: [
+                {label: "PHP", img: "php.png"},
+                {label: "Python", img: "python.png"},
+                {label: "Java", img: "java.png"},
+                {label: "C", img: "c.png"},
+            ]
+        },
+        {
+            category: "Bases de données",
+            skills: [
+                {label: "MySQL", img: "mysql.png"},
+                {label: "PostgreSQL", img: "postgresql.png"},
+                {label: "MongoDB", img: "mongodb.png"}
+            ]
+        },
+        {
+            category: "Outils & Workflow",
+            skills: [
+                {label: "Git", img: "git.png"},
+                {label: "Github", img: "github.png"},
+                {label: "Postman", img: "postman.png"},
+                {label: "VS Code", img: "vscode.png"},
+                {label: "JetBrains", img: "jetbrains.png"},
+                {label: "Docker", img: "docker.png"},
+                {label: "Jenkins", img: "jenkins.png"},
+                {label: "Figma", img: "figma.png"}
+            ]
+        },
+    ],
+    soft_skills : [
+        {
+            icon: "🤝",
+            title: "Travail en équipe",
+            description:
+                "Collaboration efficace et communication fluide.",
+        },
+        {
+            icon: "📊",
+            title: "Esprit analytique",
+            description:
+                "Analyse des problématiques pour améliorer l’expérience utilisateur.",
+        },
+        {
+            icon: "⚡",
+            title: "Adaptabilité",
+            description:
+                "Capacité à apprendre rapidement et s’ajuster.",
+        },
+        {
+            icon: "🗂️",
+            title: "Organisation",
+            description:
+                "Gestion des tâches et respect des délais.",
+        },
+
+    ]
+}
 
 export const competences = [
     {
@@ -84,6 +123,6 @@ export const competences = [
     {
         name: "Collaborer",
         description: "Manager une équipe informatique",
-        projects: [projects.unesco, projects.tchoutchou, projects.jenkins ]
+        projects: [projects.unesco, projects.tchoutchou, projects.jenkins]
     }
 ];

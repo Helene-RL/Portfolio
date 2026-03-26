@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../composant/Navbar";
 import {Section} from "../composant/Section";
 import {Timeline} from "../composant/Timeline";
-import {Skills} from "../composant/Skills";
+import {CategorySkill, Skills, SoftSkillCard} from "../composant/Skills";
 import {Competences} from "../composant/Competences";
 import {Form} from "../composant/Form";
 import {Footer} from "../composant/Footer";
@@ -56,7 +56,16 @@ export const HomePage = () => {
 
                 {/*hard skills*/}
                 <Section id="hard_skills" name="Hard Skills">
-                    <Skills tab_skills={SkillsData}/>
+                    <Skills tab_skills={SkillsData.hard_skills}/>
+                </Section>
+
+                {/*soft skills*/}
+                <Section id="soft_skills" name="Soft Skills">
+                    <div className="container-fluid d-flex flex-wrap justify-content-evenly pt-4">
+                        {SkillsData.soft_skills.map((skill) => (
+                            <SoftSkillCard icon={skill.icon} title={skill.title} description={skill.description} />
+                        ))}
+                    </div>
                 </Section>
 
                 {/*compétences*/}

@@ -1,6 +1,18 @@
 import React from "react"
 
-export const Skill = (props: { label: string, img: string }) => {
+
+export const SoftSkillCard = (props: { icon: any, title: string, description: string }) => {
+    return (
+            <div className="card shadow-sm border-1 rounded-3 mb-3">
+                <div className="card-body d-flex">
+                    <div className="pe-1">{props.icon}</div>
+                    <h5 className="card-title fw-semibold color-blue">{props.title}</h5>
+                </div>
+            </div>
+    );
+};
+
+export const HardSkill = (props: { label: string, img: string }) => {
     return (
         <div className="p-2 text-center">
             <p>{props.label}</p>
@@ -15,7 +27,7 @@ export const CategorySkill = (props: { category: string, skills: SkillsData[] })
             <h4 className="mb-3">{props.category}</h4>
             <div className="container d-flex flex-wrap text-center justify-content-center align-items-center">
                 {props.skills.map((item: SkillsData) => (
-                    <Skill
+                    <HardSkill
                         key={item.label}
                         label={item.label}
                         img={item.img}

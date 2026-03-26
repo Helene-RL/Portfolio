@@ -1,15 +1,7 @@
 import React from "react"
 import {Menu} from "./Menu";
 import {scrollToSection} from "./Scroll";
-
-const navElements = [
-    {label: "Accueil", anchor: "accueil"},
-    {label: "Présentation", anchor: "presentation"},
-    {label: "Résumé", anchor: "resume"},
-    {label: "Hard skills", anchor: "hard_skills"},
-    {label: "Compétences", anchor: "competences"},
-    {label: "Contact", anchor: "contact"}
-]
+import {navElements} from "../data/homeData"
 
 export const Navbar = () => {
     return (
