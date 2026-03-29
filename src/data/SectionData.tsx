@@ -5,6 +5,7 @@ import {competences, ExperienceData, FormationData, SkillsData} from "./homeData
 import {CompetenceCard} from "../composant/Competences";
 import {Form} from "../composant/Form";
 import React from "react";
+import {Language, translations} from "./i18n";
 
 const BASE_URL = import.meta.env.BASE_URL;
 
@@ -13,76 +14,79 @@ type SectionContentItem = {
     content: React.ReactNode;
 };
 
-export const sectionContent: Record<string, SectionContentItem> = {
-    accueil: {
-        className: "justify-content-center",
-        content: (
-            <a href={`${BASE_URL}images/cv.pdf`} download="cv.pdf">
-                <button className="btn btn-primary background-blue fw-bold">
-                    Télécharger mon cv
-                </button>
-            </a>
-        )
-    },
-    presentation: {
-        className: "justify-content-center align-items-center pt-3",
-        content: (
-            <>
-                <Presentation/>
-                <img
-                    src={`${BASE_URL}images/photo_profil.jpg`}
-                    alt="Photo de profil développeur"
-                    className="img-fluid rounded mx-3 img-presentation"
-                />
-            </>)
-    },
-    resume: {
-        content: (
-            <>
-                <Timeline name="Formation" elements={FormationData}/>
-                <Timeline name="Expérience" elements={ExperienceData}/>
-            </>
-        )
-    },
-    hard_skills: {
-        className: "flex-wrap justify-content-around",
-        content: (
-            <>
-                {SkillsData.hard_skills.map((cat) => (
-                    <CategorySkill key={cat.category} category={cat.category} skills={cat.skills}/>
-                ))
-                }
-            </>
-        )
-    },
-    soft_skills: {
-        className: "flex-wrap justify-content-evenly pt-4",
-        content: (
-            <>
-                {SkillsData.soft_skills.map((skill) => (
-                    <SoftSkillCard key={skill.title} {...skill} />
-                ))}
-            </>
-        )
-    },
-    competences: {
-        className: "flex-wrap justify-content-center",
-        content: (
-            <>
-                {competences.map((item) => (
-                    <CompetenceCard key={item.name} name={item.name} description={item.description}
-                                    list_projectCard={item.projects}/>
-                ))}
-            </>
-        )
-    },
-    contact: {
-        className: "flex-column justify-content-center",
-        content: (
-            <>
-                <h6>N'hésitez pas à me contacter...</h6>
-                <Form/>
-            </>
-        )
-    }
-};
+export const sectionContent = (lang: Language): Record<string, SectionContentItem> => {
+    const t = translations[lang];
+    return {
+        accueil: {
+            className: "justify-content-center",
+            content: (
+                <a href={`${BASE_URL}images/cv.pdf`} download="cv.pdf">
+                    <button className="btn btn-primary background-blue fw-bold">
+                        {t.accueil.buttonCV}
+                    </button>
+                </a>
+            )
+        },
+        presentation: {
+            className: "justify-content-center align-items-center pt-3",
+            content: (
+                <>
+                    <Presentation lang={lang} />
+                    <img
+                        src={`${BASE_URL}images/photo_profil.jpg`}
+                        alt="Photo de profil développeur"
+                        className="img-fluid rounded mx-3 img-presentation"
+                    />
+                </>)
+        },
+        resume: {
+            content: (
+                <>
+                    <Timeline name="Formation" elements={FormationData}/>
+                    <Timeline name="Expérience" elements={ExperienceData}/>
+                </>
+            )
+        },
+        hard_skills: {
+            className: "flex-wrap justify-content-around",
+            content: (
+                <>
+                    {SkillsData.hard_skills.map((cat) => (
+                        <CategorySkill key={cat.category} category={cat.category} skills={cat.skills}/>
+                    ))
+                    }
+                </>
+            )
+        },
+        soft_skills: {
+            className: "flex-wrap justify-content-evenly pt-4",
+            content: (
+                <>
+                    {SkillsData.soft_skills.map((skill) => (
+                        <SoftSkillCard key={skill.title} {...skill} />
+                    ))}
+                </>
+            )
+        },
+        competences: {
+            className: "flex-wrap justify-content-center",
+            content: (
+                <>
+                    {competences.map((item) => (
+                        <CompetenceCard key={item.name} name={item.name} description={item.description}
+                                        list_projectCard={item.projects}/>
+                    ))}
+                </>
+            )
+        },
+        contact: {
+            className: "flex-column justify-content-center",
+            content: (
+                <>
+                    <h6>{t.contact.info}</h6>
+                    <Form lang={lang}/>
+                </>
+            )
+        }
+    };
+}

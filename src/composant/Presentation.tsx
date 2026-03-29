@@ -1,23 +1,19 @@
 import React from "react";
 import {scrollToSection} from "./Scroll";
+import {Language, translations} from "../data/i18n";
 
-export const Presentation = ( ) => {
+export const Presentation = (props:{lang: Language} ) => {
+    const t = translations[props.lang].presentation
     return (
         <div className="presentation">
-            <h3 className="pb-3">Apprendre à me connaître !</h3>
+            <h3 className="pb-3">{t.text}</h3>
             <div className="text-start">
-                <p>Bonjour! Je m'appelle <strong>Hélène Ralu--Leroy</strong> et je suis <strong>étudiante
-                    en 3<sup>ème</sup> année de BUT informatique </strong> à l'IUT de Marne la Vallée.
+                <p dangerouslySetInnerHTML={{ __html: t.paragraphe1 }} />
+                <p>{t.paragraphe2}
                 </p>
-                <p>Je suis en alternance chez Caseware France, où je développe mes compétences en
-                    développement et en travail d'équipe sur des projets concrets.
+                <p>{t.paragraphe3}
                 </p>
-                <p>Curieuse et ouverte d’esprit, j’aime travailler sur des problématiques variées, coder
-                    et découvrir de nouvelles technologies. Au cours de mes études, j’ai déjà participé
-                    à plusieurs projets web réalisés en équipe, ce qui m’a permis de renforcer mes
-                    compétences techniques et collaboratives.
-                </p>
-                <p>N’hésitez pas à parcourir mes projets ou à me contacter pour échanger !</p>
+                <p>{t.paragraphe4}</p>
             </div>
             <button className="btn btn-primary background-blue fw-bold"
                     onClick={() => scrollToSection("contact")}>Contact

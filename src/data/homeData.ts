@@ -1,44 +1,5 @@
 import {projects} from "./projectsData";
 
-export const sections = [
-    {
-        id: "accueil",
-        navLabel: "Accueil",
-        title: "Bienvenue sur mon portfolio",
-        level: 1,
-    },
-    {
-        id: "presentation",
-        navLabel: "Présentation",
-        title: "Présentation",
-    },
-    {
-        id: "resume",
-        navLabel: "Résumé",
-        title: "Résumé",
-    },
-    {
-        id: "hard_skills",
-        navLabel: "Hard skills",
-        title: "Hard Skills",
-    },
-    {
-        id: "soft_skills",
-        navLabel: "Soft skills",
-        title: "Soft Skills",
-    },
-    {
-        id: "competences",
-        navLabel: "Compétences",
-        title: "Compétences",
-    },
-    {
-        id: "contact",
-        navLabel: "Contact",
-        title: "Contact",
-    }
-];
-
 export const FormationData = [
     {date: "2023-2026", name: "BUT informatique", place: "IUT de Marne la Vallée - Champs-sur-Marne"},
     {date: "2020-2023", name: "Baccalauréat général", place: "Lycée Arago - Paris"},

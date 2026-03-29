@@ -2,9 +2,11 @@ import React from "react";
 import Navbar from "../composant/Navbar";
 import {Section} from "../composant/Section";
 import {Footer} from "../composant/Footer";
-import {sections} from "../data/homeData";
 import {sectionContent} from "../data/SectionData";
 import "../style.css"
+
+import {useState} from "react";
+import {Language, translations} from "../data/i18n";
 
 
 const scrollToTop = () => {
@@ -15,24 +17,28 @@ const scrollToTop = () => {
 }
 
 export const HomePage = () => {
+    const [lang, setLang] = useState<Language>("fr");
+
+    const content = sectionContent(lang);
     return (
         <>
             {/*header*/}
             <header>
-                <Navbar/>
+                <Navbar lang={lang} setLang={setLang}/>
             </header>
             {/*body*/}
             <div className="container-fluid d-flex flex-column w-100 scrollspy-example"
                  data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%"
                  data-bs-smooth-scroll="true" tabIndex={0}>
 
-                {sections.map((section) => {
-                    const contentSection = sectionContent[section.id]
+                {Object.keys(translations[lang]).map((section) => {
+                    const contentSection = content[section]
+                    const objectSection = translations[lang][section];
                     return (
                         <Section
-                            key={section.id}
-                            id={section.id}
-                            name={section.title}
+                            key={section}
+                            id={section}
+                            name={objectSection?.title || objectSection.title}
                             className={contentSection.className}
                         >
                             {contentSection.content}

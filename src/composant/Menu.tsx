@@ -14,23 +14,20 @@ export const NavItem = (props: { label: string, anchor: string }) => {
     )
 }
 
-type NavItemData = {
-    navLabel: string;
-    id: string;
-    title: string;
-    level?: number | undefined;
-}
-export const Menu = (props: { element_nav: NavItemData[] }) => {
+export const Menu = (props: { element_nav: any }) => {
     return (
         <div className="collapse navbar-collapse" id="navbarScroll">
             <ul className="navbar-nav ms-auto">
-                {props.element_nav.map((item: NavItemData) => (
-                    <NavItem
-                        key={item.id}
-                        label={item.navLabel}
-                        anchor={item.id}
-                    />
-                ))}
+                {Object.keys(props.element_nav).map((item) => {
+                    const label = props.element_nav[item];
+                    return (
+                        <NavItem
+                            key={item}
+                            label={label.navLabel || label.title}
+                            anchor={item}
+                        />
+                    )
+                })}
             </ul>
         </div>
     )
