@@ -6,13 +6,16 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --couleur-principale: #3381c7
+    --couleur-principale: #3381c7;
 }
 
 section {
-    min-height: 30em;
-    width: 100%;
+    min-height: 27em;
     padding-top: 5em;
+}
+
+body {
+    background-color: #f8f9fa;
 }
 
 /*global*/
@@ -155,6 +158,7 @@ img {
 }
 
 .card-portfolio .accordion-button::after {
+
     filter: invert(1);
 }
 
@@ -192,12 +196,7 @@ img {
 
 /* Désactiver les styles globaux de carte */
 .project-page .card {
-    width: 100%;
-    background: linear-gradient(135deg, var(--couleur-principale) 0%, #66a8d8 100%);
-    border: none;
-    color: white;
-    transition: none;
-    transform: none;
+    border: solid 1px var(--couleur-principale);
 }
 
 .project-page .card-body {

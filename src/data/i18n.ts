@@ -156,7 +156,7 @@ export const translations = {
                     description_card:
                         "Site e-commerce pour doudous faits main avec focus sur l’accessibilité.",
                     description:
-                        "Ce projet a vu le jour en collaboration avec un expert en accessibilité, dans le but de créer un site de vente en ligne dédié aux doudous faits main...",
+                        "Ce projet a vu le jour en collaboration avec un expert en accessibilité, dans le but de créer un site de vente en ligne dédié aux doudous faits main. L'objectif était de concevoir un site simple et attrayant pour présenter et vendre ces créations uniques, tout en assurant une accessibilité optimale pour tous les utilisateurs, y compris ceux ayant des besoins spécifiques en matière d'accessibilité numérique. Le site devait permettre aux clients de découvrir et d’acheter les doudous, tout en offrant une navigation fluide et inclusive.",
                     objectives: [
                         "Créer un site de vente en ligne pour des créations artisanales",
                         "Appliquer les principes d’accessibilité numérique",
@@ -171,7 +171,7 @@ export const translations = {
                     description_card:
                         "Plateforme moderne pour réserver des billets TGV facilement et en sécurité.",
                     description:
-                        "L’objectif de ce projet était de concevoir et de développer une plateforme moderne, intuitive et sécurisée...",
+                        "L’objectif de ce projet était de concevoir et de développer une plateforme moderne, intuitive et sécurisée qui permette aux voyageurs de réserver facilement leurs billets TGV. Le site devait offrir des fonctionnalités pratiques telles que la recherche de trajets, la gestion des réservations et le paiement en ligne.",
                     objectives: [
                         "Découvrir et utiliser une base de données NoSQL",
                         "Mettre en œuvre MongoDB dans une application web",
@@ -186,7 +186,7 @@ export const translations = {
                     description_card:
                         "Developpement d'un jeu de société: le Codex Naturalis",
                     description:
-                        "Projet universitaire consistant à développer une adaptation numérique du jeu de cartes Codex Naturalis...",
+                        "Projet universitaire consistant à développer une adaptation numérique du jeu de cartes Codex Naturalis. Le jeu respecte les règles officielles et propose une interface permettant à plusieurs joueurs de s'affronter. Le projet met l'accent sur la logique de jeu, la gestion des cartes, le calcul des scores et la structuration du code.",
                     objectives: [
                         "Analyser et comprendre les règles d’un jeu de société existant",
                         "Modéliser les entités du jeu",
@@ -201,7 +201,7 @@ export const translations = {
                     description_card:
                         "Création d'un site culturel sur Alger en partenariat avec l’Unesco.",
                     description:
-                        "Ce projet a été réalisé tout au long de l’année dans le cadre d’une SAE...",
+                        "Ce projet a été réalisé tout au long de l’année dans le cadre d’une SAE et correspond au premier site web développé durant la formation. Le site a été conçu pour promouvoir la culture d’Alger à travers la mise en valeur de son patrimoine historique, culturel et urbain. Le projet a permis de découvrir les bases du développement web tout en travaillant sur un sujet à forte dimension culturelle.",
                     objectives: [
                         "Développer un premier site web fonctionnel",
                         "Promouvoir la culture et le patrimoine de la ville d’Alger",
@@ -216,7 +216,7 @@ export const translations = {
                     description_card:
                         "Création d’un site de vente de fruits et légumes pour s’entraîner aux bases de données.",
                     description:
-                        "Ce projet a été réalisé dans le cadre de la formation afin de s’entraîner à l’utilisation des bases de données...",
+                        "Ce projet a été réalisé dans le cadre de la formation afin de s’entraîner à l’utilisation des bases de données. Le travail a commencé par une phase théorique, comprenant l’étude et la conception de la base de données, avant de passer à la mise en pratique à travers le développement d’un site web. L’objectif principal était d’appliquer concrètement les notions étudiées en cours.",
                     objectives: [
                         "Appliquer les notions théoriques de bases de données",
                         "Concevoir et utiliser une base de données",
@@ -231,7 +231,7 @@ export const translations = {
                     description_card:
                         "Qix est un projet Python où le joueur trace des lignes pour capturer des zones.",
                     description:
-                        "Qix est un projet développé en Python où le joueur doit remplir l’aire de jeu...",
+                        "Qix est un projet développé en Python où le joueur doit remplir l’aire de jeu en traçant des lignes verticales et horizontales, tout en évitant le Qix, un ennemi abstrait qui se déplace librement, ainsi que des obstacles comme les sparx le long des bords. L’objectif est de sécuriser un certain pourcentage du terrain pour passer au niveau suivant, combinant stratégie, rapidité et anticipation dans un environnement minimaliste mais stimulant.",
                     objectives: [
                         "Appliquer les notions de programmation Python",
                         "Utiliser une bibliothèque fournie",
@@ -246,7 +246,7 @@ export const translations = {
                     description_card:
                         "Mise en place d'un serveur DHCP sur une machine local.",
                     description:
-                        "Ce projet consistait à mettre en place et configurer un serveur DHCP...",
+                        "Ce projet consistait à mettre en place et configurer un serveur DHCP sur une machine locale à l’aide de Netkit. L’objectif était de comprendre le fonctionnement de l’attribution automatique d’adresses IP, d’analyser les échanges réseau à l’aide de Wireshark et de manipuler des scripts Bash pour automatiser certaines tâches. Ce travail a permis de renforcer les bases en administration réseau et en compréhension des protocoles.",
                     objectives: [
                         "Comprendre le fonctionnement du protocole DHCP",
                         "Configurer un serveur réseau",
@@ -260,7 +260,7 @@ export const translations = {
                     description_card:
                         "Creation d'un site de rencontre amicale entre personne agés",
                     description:
-                        "Ami d’Âge est un projet réalisé dans le cadre d’un enseignement de qualité web...",
+                        "Ami d’Âge est un projet réalisé dans le cadre d’un enseignement de qualité web. L’objectif était de concevoir un site permettant aux personnes âgées de s’organiser pour se rencontrer, se faire des amis et participer à des sorties. Une attention particulière a été portée à la qualité globale du site, tant sur le plan fonctionnel que sur l’organisation du projet.",
                     objectives: [
                         "Concevoir un site web pour un public spécifique",
                         "Faciliter les rencontres",
@@ -275,7 +275,7 @@ export const translations = {
                     description_card:
                         "Optimisation du code d'un project de 1er année: Qix.",
                     description:
-                        "Ce projet consiste à reprendre le jeu Qix développé en première année...",
+                        "Ce projet consiste à reprendre le jeu Qix développé en première année afin d’en améliorer les performances, la lisibilité du code et la structure globale. Le travail a porté sur l’optimisation des algorithmes, la réduction de la complexité inutile, ainsi que sur une meilleure organisation du code pour faciliter sa maintenance et son évolution.",
                     objectives: [
                         "Optimiser les performances",
                         "Refactoriser le code",
@@ -289,7 +289,7 @@ export const translations = {
                     description_card:
                         "Creation d'un site d'aide à la gestion du recrutement",
                     description:
-                        "L’objectif de ce projet est de concevoir deux applications web...",
+                        "L’objectif de ce projet est de concevoir deux applications web pour répondre aux besoins de l’entreprise Pluri’Elles. La première application vise à faciliter la gestion du recrutement en permettant au service des ressources humaines de centraliser et d’analyser les candidatures plus efficacement. La seconde est un module d’e-learning destiné aux employés, leur permettant d’accéder à différentes formations. Ce module intègre également une solution utilisant la réalité virtuelle (VR) afin de proposer des expériences de formation immersives.",
                     objectives: [
                         "Concevoir une application full-stack",
                         "Développer une API backend",
@@ -304,7 +304,7 @@ export const translations = {
                     description_card:
                         "Simulation d’une chaîne CI/CD pour un projet C.",
                     description:
-                        "Ce projet a consisté à simuler une chaîne CI/CD en utilisant Jenkins...",
+                        "Ce projet a consisté à simuler une chaîne CI/CD en utilisant Jenkins pour un projet C développant l’algorithme du tri à bulle. L’objectif était de mettre en place une chaîne complète de tests automatisés et de déploiement avec Docker, en utilisant GitHub pour la gestion du code. Le projet s’inscrit dans le cadre de la qualité web, avec un accent sur les bonnes pratiques de développement, l’automatisation et la fiabilité des livraisons.",
                     objectives: [
                         "Mettre en place une chaîne CI/CD",
                         "Automatiser les tests",

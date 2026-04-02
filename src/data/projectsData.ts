@@ -5,6 +5,7 @@ export type Project = {
     image: string;
     url?: string;
     faitAvec: string[];
+    github?: string;
 };
 
 export const projects: Record<string, Project> = {
@@ -14,6 +15,7 @@ export const projects: Record<string, Project> = {
         technos: ["React", "TypeScript", "API Wikipedia"],
         image: "wikiadventure.png",
         faitAvec: ["damienTremerie", "romainLoncin"],
+        github: "https://github.com/Helene-RL/WikiAdventure"
     },
 
     travia: {
@@ -22,6 +24,7 @@ export const projects: Record<string, Project> = {
         technos: ["C", "PHP", "Java", "HTML", "CSS", "JS", "Graphe", "BDD"],
         image: "travia.png",
         faitAvec: ["damienTremerie", "romainLoncin", "emilieXu"],
+        github: "https://github.com/Helene-RL/travia"
     },
 
     tp_reseau: {
@@ -39,6 +42,7 @@ export const projects: Record<string, Project> = {
         image: "easyfund.png",
         url: "https://damien-Tremeriee.go.yj.fr/easyfunds2/login.php",
         faitAvec: ["damienTremerie", "romainLoncin", "emilieXu"],
+        github: "https://github.com/RunsFire/EasyFunds",
     },
 
     petit_creation: {
@@ -56,6 +60,7 @@ export const projects: Record<string, Project> = {
         technos: ["PHP", "HTML", "CSS", "JS", "MongoDB", "NoSQL"],
         image: "tchou-tchou.png",
         faitAvec: ["damienTremerie", "romainLoncin", "benjaminRissot"],
+        github: "https://github.com/Tirlen/Tchou-Tchou",
     },
 
     codexnaturalis: {
@@ -114,6 +119,7 @@ export const projects: Record<string, Project> = {
         image: "qix.png",
         url: "https://replit.com/@heleneraluleroy/Qix",
         faitAvec: ["benjaminRissot"],
+        github: "https://github.com/Helene-RL/Qix",
     },
 
     plurielle: {
@@ -122,6 +128,7 @@ export const projects: Record<string, Project> = {
         technos: ["Next.js", "Python", "FastAPI", "React", "TypeScript", "PostgreSQL", "Docker", "GitLab CI/CD",],
         image: "plurielle.png",
         faitAvec: ["damienTremerie", "romainLoncin", "randyBouJaber", "alexisTelle", "julienSynaeve"],
+        github: "https://gitlab.julien-synaeve.fr/",
     },
 
     jenkins: {
@@ -130,5 +137,6 @@ export const projects: Record<string, Project> = {
         technos: ["C", "Jenkins", "Docker", "Github", "CI/CD"],
         image: "jenkins.png",
         faitAvec: ["damienTremerie", "romainLoncin", "emilieXu", "jeremyZheng"],
+        github: "https://github.com/Helene-RL/Jenkins",
     },
 };
