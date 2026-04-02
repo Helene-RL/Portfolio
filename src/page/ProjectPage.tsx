@@ -4,8 +4,9 @@ import {projects} from "../data/projectsData";
 import {people} from "../data/people";
 import {ProjectSection} from "../composant/Project/ProjectSection";
 import {ProjectElement} from "../composant/Project/ProjectElement";
+import {Language, translations} from "../data/i18n";
 
-const ProjectPage = () => {
+const ProjectPage = ({lang}: { lang: Language}) => {
     const {projectKey} = useParams();
     const navigate = useNavigate();
     const HandleRetour = () => {
@@ -16,7 +17,10 @@ const ProjectPage = () => {
         HandleRetour()
         return null;
     }
+
+    const t = translations[lang].competences
     const project = projects[projectKey];
+    const infoTraduction = t.projects[projectKey];
 
     if (!project) {
         HandleRetour()
@@ -28,12 +32,12 @@ const ProjectPage = () => {
             <div className="container-fluid my-1">
 
                 <button className="btn mb-3 background-blue text-light" onClick={HandleRetour}>
-                    ← Retour au portfolio
+                    {t.back}
                 </button>
 
                 <div className="card border-0 mb-4 project-header">
                     <div className="text-white text-center py-4">
-                        <h2 className="fw-bold">{project.title}</h2>
+                        <h2 className="fw-bold">{infoTraduction.title}</h2>
                         <p className="mb-0 fs-4">{project.year}</p>
                     </div>
                 </div>
@@ -44,9 +48,9 @@ const ProjectPage = () => {
                             const image = (
                                 <img
                                     src={`${import.meta.env.BASE_URL}projects/${project.image}`}
-                                    alt={project.title}
+                                    alt={infoTraduction.title}
                                     className="img-fluid rounded border border-2"
-                                    style={{ maxHeight: "25em" }}
+                                    style={{maxHeight: "25em"}}
                                 />
                             );
 
@@ -58,15 +62,15 @@ const ProjectPage = () => {
                         })()}
                     </ProjectElement>
 
-                    <ProjectElement element={project.description}>
-                        <p className="fs-6 px-3">{project.description}</p>
+                    <ProjectElement element={infoTraduction.description}>
+                        <p className="fs-6 px-3">{infoTraduction.description}</p>
                     </ProjectElement>
                 </ProjectSection>
 
                 <ProjectSection>
-                    <ProjectElement title="Objectifs" element={project.objectives} width50={false}>
+                    <ProjectElement title={t.objectives} element={infoTraduction.objectives} width50={false}>
                         <div className="row w-auto">
-                            {project.objectives.map((objective: string, index: number) => (
+                            {infoTraduction.objectives.map((objective: string, index: number) => (
                                 <div key={index} className="col-md-4 mb-3 h3">
                                     <div className="card border-0 shadow-sm">
                                         <div className="card-body text-center">
@@ -81,20 +85,20 @@ const ProjectPage = () => {
 
                 <hr className="my-4"/>
                 <ProjectSection>
-                    <ProjectElement title="Fait avec" element={project.faitAvec}>
+                    <ProjectElement title={t.madeWith} element={project.faitAvec}>
                         <ul className="list-unstyled">
                             {project.faitAvec.map((personId: string) => {
                                 const person = people[personId];
                                 return (
                                     <li key={personId}>• <a href={person.url} target="_blank"
-                                                          rel="noopener noreferrer"
-                                                          className="lien-projet">{person.name}</a></li>
+                                                            rel="noopener noreferrer"
+                                                            className="lien-projet">{person.name}</a></li>
                                 )
                             })}
                         </ul>
                     </ProjectElement>
 
-                    <ProjectElement title="Technologies utilisées" element={project.technos}>
+                    <ProjectElement title={t.technologies} element={project.technos}>
                         <div className="mb-4">
                             {project.technos.map((tech: string, index: number) => (
                                 <span key={index} className="badge rounded-pill me-1 mb-1 background-blue">

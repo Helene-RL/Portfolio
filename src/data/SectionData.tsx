@@ -31,7 +31,7 @@ export const sectionContent = (lang: Language): Record<string, SectionContentIte
             className: "justify-content-center align-items-center pt-3",
             content: (
                 <>
-                    <Presentation lang={lang} />
+                    <Presentation lang={lang}/>
                     <img
                         src={`${BASE_URL}images/photo_profil.jpg`}
                         alt="Photo de profil développeur"
@@ -52,7 +52,7 @@ export const sectionContent = (lang: Language): Record<string, SectionContentIte
             content: (
                 <>
                     {SkillsData.hard_skills.map((cat) => (
-                        <CategorySkill key={cat.category} category={cat.category} skills={cat.skills}/>
+                        <CategorySkill lang={lang} key={cat.category} category={cat.category} skills={cat.skills}/>
                     ))
                     }
                 </>
@@ -62,7 +62,7 @@ export const sectionContent = (lang: Language): Record<string, SectionContentIte
             className: "flex-wrap justify-content-evenly pt-4",
             content: (
                 <>
-                    {SkillsData.soft_skills.map((skill) => (
+                    {t.soft_skills.skills.map((skill) => (
                         <SoftSkillCard key={skill.title} {...skill} />
                     ))}
                 </>
@@ -72,10 +72,13 @@ export const sectionContent = (lang: Language): Record<string, SectionContentIte
             className: "flex-wrap justify-content-center",
             content: (
                 <>
-                    {competences.map((item) => (
-                        <CompetenceCard key={item.name} name={item.name} description={item.description}
-                                        list_projectCard={item.projects}/>
-                    ))}
+                    {Object.keys(t.competences.descriptions).map((item) => {
+                        const competence = t.competences.descriptions[item];
+                        const projects = competences[item]
+                        return (<CompetenceCard key={competence.name} lang={lang} name={competence.name} description={competence.description}
+                                                list_projectCard={projects}/>
+                        )
+                    })}
                 </>
             )
         },

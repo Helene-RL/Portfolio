@@ -1,8 +1,10 @@
 import React, {useState} from "react"
 import {ProjectCard} from "./Project/ProjectCard";
 import {Project} from "../data/projectsData";
+import {Language, translations} from "../data/i18n";
 
 export const CompetenceCard = (props: {
+    lang: Language
     name: string,
     description: string,
     list_projectCard: Project[]
@@ -24,11 +26,14 @@ export const CompetenceCard = (props: {
             </div>
             <div className={`collapse ${open ? "show" : ""}`} id={`${collapseId}`}>
                 <div className="card-body d-flex flex-wrap justify-content-center">
-                    {props.list_projectCard.map((project: Project) => (
-                        <ProjectCard key={project.id} id={project.id} annee={project.year} title={project.title}
-                                     img={project.image}
-                                     description={project.description_card}/>
-                    ))}
+                    {props.list_projectCard.map((project: Project) => {
+                        const infoTranslation= translations[props.lang].competences.projects[project.id]
+                        return (
+                            <ProjectCard key={project.id} id={project.id} annee={project.year} title={infoTranslation.title}
+                                         img={project.image}
+                                         description={infoTranslation.description_card}/>
+                        )
+                    })}
                 </div>
             </div>
         </div>

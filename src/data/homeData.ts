@@ -14,7 +14,7 @@ export const ExperienceData = [
 export const SkillsData = {
     hard_skills: [
         {
-            category: "Frontend",
+            category: "frontend",
             skills: [
                 {label: "HTML", img: "html.png"},
                 {label: "CSS", img: "css.png"},
@@ -25,7 +25,7 @@ export const SkillsData = {
             ]
         },
         {
-            category: "Backend",
+            category: "backend",
             skills: [
                 {label: "PHP", img: "php.png"},
                 {label: "Python", img: "python.png"},
@@ -34,7 +34,7 @@ export const SkillsData = {
             ]
         },
         {
-            category: "Bases de données",
+            category: "database",
             skills: [
                 {label: "MySQL", img: "mysql.png"},
                 {label: "PostgreSQL", img: "postgresql.png"},
@@ -42,7 +42,7 @@ export const SkillsData = {
             ]
         },
         {
-            category: "Outils & Workflow",
+            category: "tools_workflow",
             skills: [
                 {label: "Git", img: "git.png"},
                 {label: "Github", img: "github.png"},
@@ -55,64 +55,13 @@ export const SkillsData = {
             ]
         },
     ],
-    soft_skills: [
-        {
-            icon: "🤝",
-            title: "Travail en équipe",
-            description:
-                "Collaboration efficace et communication fluide.",
-        },
-        {
-            icon: "📊",
-            title: "Esprit analytique",
-            description:
-                "Analyse des problématiques pour améliorer l’expérience utilisateur.",
-        },
-        {
-            icon: "⚡",
-            title: "Adaptabilité",
-            description:
-                "Capacité à apprendre rapidement et s’ajuster.",
-        },
-        {
-            icon: "🗂️",
-            title: "Organisation",
-            description:
-                "Gestion des tâches et respect des délais.",
-        },
-
-    ]
 }
 
-export const competences = [
-    {
-        name: "Realiser",
-        description: "Adapter des applications sur un ensemble de supports",
-        projects: [projects.qix, projects.wikiadventure, projects.plurielle]
-    },
-    {
-        name: "Optimiser",
-        description: "Analyser et optimiser des applications",
-        projects: [projects.codexnaturalis, projects.travia, projects.qix_optimisation]
-    },
-    {
-        name: "Administrer",
-        description: "Déployer des services dans une infrastructure réseau",
-        projects: [projects.sae_reseau, projects.tp_reseau]
-    },
-    {
-        name: "Gérer",
-        description: "Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité",
-        projects: [projects.primeur_passion, projects.easyfund]
-    },
-    {
-        name: "Conduire",
-        description: "Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs",
-        projects: [projects.site_vieux, projects.petit_creation]
-    },
-    {
-        name: "Collaborer",
-        description: "Manager une équipe informatique",
-        projects: [projects.unesco, projects.tchoutchou, projects.jenkins]
-    }
-];
+export const competences = {
+    realiser: [projects.qix, projects.wikiadventure, projects.plurielle],
+    optimiser: [projects.codexnaturalis, projects.travia, projects.qix_optimisation],
+    administrer: [projects.sae_reseau, projects.tp_reseau],
+    gerer: [projects.primeur_passion, projects.easyfund],
+    conduire: [projects.site_vieux, projects.petit_creation],
+    collaborer: [projects.unesco, projects.tchoutchou, projects.jenkins],
+};

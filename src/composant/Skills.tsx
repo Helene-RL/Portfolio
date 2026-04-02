@@ -1,4 +1,5 @@
 import React from "react"
+import {Language, translations} from "../data/i18n";
 
 
 export const SoftSkillCard = (props: { icon: any, title: string, description: string }) => {
@@ -26,10 +27,11 @@ type SkillsData = {
     img: string;
 }
 
-export const CategorySkill = (props: { category: string, skills: SkillsData[] }) => {
+export const CategorySkill = (props: {lang:Language, category: keyof typeof translations["fr"]["hard_skills"]["category"], skills: SkillsData[] }) => {
+    const t = translations[props.lang];
     return (
         <div className="border border-dark rounded-5 my-2 mx-1 shadow p-1 category-skill">
-            <h4 className="mb-3">{props.category}</h4>
+            <h4 className="mb-3">{t.hard_skills.category[props.category]}</h4>
             <div className="container d-flex flex-wrap text-center justify-content-center align-items-center">
                 {props.skills.map((item: SkillsData) => (
                     <HardSkill

@@ -4,8 +4,6 @@ import {Section} from "../composant/Section";
 import {Footer} from "../composant/Footer";
 import {sectionContent} from "../data/SectionData";
 import "../style.css"
-
-import {useState} from "react";
 import {Language, translations} from "../data/i18n";
 
 
@@ -16,8 +14,7 @@ const scrollToTop = () => {
     });
 }
 
-export const HomePage = () => {
-    const [lang, setLang] = useState<Language>("fr");
+export const HomePage = ({ lang, setLang }: { lang: Language, setLang: (lang: Language) => void }) => {
 
     const content = sectionContent(lang);
     return (
@@ -31,9 +28,9 @@ export const HomePage = () => {
                  data-bs-spy="scroll" data-bs-target="#navbar-header" data-bs-root-margin="0px 0px -40%"
                  data-bs-smooth-scroll="true" tabIndex={0}>
 
-                {Object.keys(translations[lang]).map((section) => {
+                {Object.keys(translations[lang]).map((section: string) => {
                     const contentSection = content[section]
-                    const objectSection = translations[lang][section];
+                    const objectSection = translations[lang][section]
                     return (
                         <Section
                             key={section}
