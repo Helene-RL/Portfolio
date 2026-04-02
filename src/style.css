@@ -106,11 +106,11 @@ img {
 
 @media (max-width: 768px) {
     .card .collapse.show {
-        width: 100% !important; /* s'assurer que la carte prend toute la largeur sur les petits écrans */
+        width: 100% !important;
     }
 
     .category-skill {
-        max-width: 100%;
+        width: 100%;
     }
 }
 
