@@ -148,6 +148,20 @@ img {
     cursor: pointer;
 }
 
+.card-portfolio .accordion-button {
+    background: transparent;
+    box-shadow: none;
+    height: 8rem;
+}
+
+.card-portfolio .accordion-button::after {
+    filter: invert(1);
+}
+
+.accordion-item:not(.collapsed) {
+    width: 100%;
+}
+
 .card-portfolio:hover {
     transform: translateY(-5px);
 }
@@ -162,8 +176,8 @@ img {
 }
 
 .card-portfolio .card-img-top {
-    max-height: 10em; /* ajuste selon ton design */
-    object-fit: contain; /* coupe l’image sans la déformer */
+    max-height: 10em;
+    object-fit: contain;
     width: 100%;
 }
 
