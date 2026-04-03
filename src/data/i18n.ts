@@ -25,6 +25,29 @@ export const translations = {
             title: "Résumé",
             formation: "Formation",
             experience: "Expérience",
+            formations: {
+                but: {
+                    name: "BUT informatique",
+                    specialty: "Réalisation d'applications"
+                },
+                bac: {
+                    name: "Baccalauréat général",
+                    specialty: "Mathématiques et NSI"
+                },
+                brevet: {
+                    name: "Brevet"
+                }
+            },
+            experiences: {
+                alternance: {
+                    name: "Alternance",
+                    role: "Développeuse web"
+                },
+                stage: {
+                    name: "Stage",
+                    role: "Stagiaire en laboratoire"
+                }
+            }
         },
         "hard_skills": {
             title: "Hard Skills",
@@ -346,6 +369,29 @@ export const translations = {
             title: "Resume",
             formation: "Education",
             experience: "Experience",
+            formations: {
+                but: {
+                    name: "Bachelor’s Degree in Computer Science (BUT)",
+                    specialty: "Application Development"
+                },
+                bac: {
+                    name: "Baccalaureate (General)",
+                    specialty: "Mathematics and Computer Science (NSI)"
+                },
+                brevet: {
+                    name: "Middle School Diploma"
+                }
+            },
+            experiences: {
+                alternance: {
+                    name: "Apprenticeship",
+                    role: "Web Developer"
+                },
+                stage: {
+                    name: "Internship",
+                    role: "Laboratory Intern"
+                }
+            }
         },
         "hard_skills": {
             title: "Hard Skills",

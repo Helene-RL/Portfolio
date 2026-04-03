@@ -3,17 +3,28 @@ import {projects} from "./projectsData";
 export const FormationData = [
     {
         date: "2023-2026",
-        name: "BUT informatique",
+        key: "but",
         place: "IUT de Marne la Vallée - Champs-sur-Marne",
-        specialty: "Réalisation d'applications"
     },
-    {date: "2020-2023", name: "Baccalauréat général", place: "Lycée Arago - Paris", specialty: "Mathématiques et NSI"},
-    {date: "2016-2020", name: "Brevet", place: "Collège Robert Doisneau - Paris"}
+    {
+        date: "2020-2023",
+        key: "bac",
+        place: "Lycée Arago - Paris",
+    },
+    {date: "2016-2020", key: "brevet", place: "Collège Robert Doisneau - Paris"}
 ];
 
 export const ExperienceData = [
-    {date: "2024-2026", name: "Alternance", place: "Caseware France - Paris", role: "Dévelopeuse web"},
-    {date: "Décembre 2019", name: "Stage", place: "CEA - Fontenay-aux-Roses", role: "Stage en laboratoire"}
+    {
+        date: "2024-2026",
+        key: "alternance",
+        place: "Caseware France - Paris",
+    },
+    {
+        date: "Décembre 2019",
+        key: "stage",
+        place: "CEA - Fontenay-aux-Roses",
+    }
 ]
 
 export const SkillsData = {

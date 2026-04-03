@@ -1,5 +1,5 @@
-// @ts-ignore
 import React from "react";
+import {Language, translations} from "../data/i18n";
 
 export const Element_Timeline = (props: {
     date: string,
@@ -21,26 +21,28 @@ export const Element_Timeline = (props: {
 
 type TimelineData = {
     date: string;
-    name: string;
+    key: string;
     place: string;
-    role?: string;
-    specialty?: string;
 }
 
-export const Timeline = (props: { name: string, elements: TimelineData[] }) => {
+export const Timeline = (props: {lang:Language, name: string, elements: TimelineData[] }) => {
+    const t = translations[props.lang].resume;
     return (
         <div className="container-fluid d-flex flex-column fw-semibold">
             <h4>{props.name}</h4>
-            {props.elements.map((item: TimelineData) => (
-                <Element_Timeline
-                    key={item.name}
-                    date={item.date}
-                    name={item.name}
-                    place={item.place}
-                    role={item.role}
-                    specialty={item.specialty}
-                />
-            ))}
+            {props.elements.map((item: TimelineData) => {
+                const data =
+                    t.formations?.[item.key] || t.experiences?.[item.key];
+                return (
+                    <Element_Timeline
+                        key={item.key}
+                        date={item.date}
+                        name={data.name}
+                        place={item.place}
+                        role={data.role}
+                        specialty={data.specialty}
+                    />)
+            })}
         </div>
     )
 }

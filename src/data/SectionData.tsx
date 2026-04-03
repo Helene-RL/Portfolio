@@ -42,8 +42,8 @@ export const sectionContent = (lang: Language): Record<string, SectionContentIte
         resume: {
             content: (
                 <>
-                    <Timeline name="Formation" elements={FormationData}/>
-                    <Timeline name="Expérience" elements={ExperienceData}/>
+                    <Timeline lang={lang} name="Formation" elements={FormationData}/>
+                    <Timeline lang={lang} name="Expérience" elements={ExperienceData}/>
                 </>
             )
         },
