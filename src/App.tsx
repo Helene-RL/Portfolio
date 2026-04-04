@@ -10,7 +10,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage lang={lang} setLang={setLang} />} />
-                <Route path="/project/:projectKey" element={<ProjectPage lang={lang} setLang={setLang} />} />
+                <Route path="/project/:projectKey" element={<ProjectPage lang={lang} />} />
             </Routes>
         </Router>
     );
